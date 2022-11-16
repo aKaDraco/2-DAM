@@ -1,0 +1,18 @@
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 3\EJ 3\bin\Debug\net6.0-windows\EJ 3.exe
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 3\EJ 3\bin\Debug\net6.0-windows\EJ 3.deps.json
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 3\EJ 3\bin\Debug\net6.0-windows\EJ 3.runtimeconfig.json
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 3\EJ 3\bin\Debug\net6.0-windows\EJ 3.dll
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 3\EJ 3\bin\Debug\net6.0-windows\EJ 3.pdb
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 3\EJ 3\obj\Debug\net6.0-windows\EJ 3.csproj.AssemblyReference.cache
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 3\EJ 3\obj\Debug\net6.0-windows\EJ_3.Form1.resources
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 3\EJ 3\obj\Debug\net6.0-windows\EJ 3.csproj.GenerateResource.cache
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 3\EJ 3\obj\Debug\net6.0-windows\EJ 3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 3\EJ 3\obj\Debug\net6.0-windows\EJ 3.AssemblyInfoInputs.cache
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 3\EJ 3\obj\Debug\net6.0-windows\EJ 3.AssemblyInfo.cs
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 3\EJ 3\obj\Debug\net6.0-windows\EJ 3.csproj.CoreCompileInputs.cache
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 3\EJ 3\obj\Debug\net6.0-windows\EJ 3.dll
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 3\EJ 3\obj\Debug\net6.0-windows\refint\EJ 3.dll
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 3\EJ 3\obj\Debug\net6.0-windows\EJ 3.pdb
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 3\EJ 3\obj\Debug\net6.0-windows\EJ 3.genruntimeconfig.cache
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 3\EJ 3\obj\Debug\net6.0-windows\ref\EJ 3.dll
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 3\EJ 3\obj\Debug\net6.0-windows\EJ_3.Properties.Resources.resources

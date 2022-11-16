@@ -1,0 +1,17 @@
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 1\EJ 1\bin\Debug\net6.0-windows\EJ 1.exe
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 1\EJ 1\bin\Debug\net6.0-windows\EJ 1.deps.json
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 1\EJ 1\bin\Debug\net6.0-windows\EJ 1.runtimeconfig.json
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 1\EJ 1\bin\Debug\net6.0-windows\EJ 1.dll
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 1\EJ 1\bin\Debug\net6.0-windows\EJ 1.pdb
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 1\EJ 1\obj\Debug\net6.0-windows\EJ 1.csproj.AssemblyReference.cache
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 1\EJ 1\obj\Debug\net6.0-windows\EJ_1.Form1.resources
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 1\EJ 1\obj\Debug\net6.0-windows\EJ 1.csproj.GenerateResource.cache
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 1\EJ 1\obj\Debug\net6.0-windows\EJ 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 1\EJ 1\obj\Debug\net6.0-windows\EJ 1.AssemblyInfoInputs.cache
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 1\EJ 1\obj\Debug\net6.0-windows\EJ 1.AssemblyInfo.cs
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 1\EJ 1\obj\Debug\net6.0-windows\EJ 1.csproj.CoreCompileInputs.cache
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 1\EJ 1\obj\Debug\net6.0-windows\EJ 1.dll
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 1\EJ 1\obj\Debug\net6.0-windows\refint\EJ 1.dll
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 1\EJ 1\obj\Debug\net6.0-windows\EJ 1.pdb
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 1\EJ 1\obj\Debug\net6.0-windows\EJ 1.genruntimeconfig.cache
+C:\Users\Hugo\OneDrive\Documentos\2º DAM\Des Interface\1ª EV\EJ 1\EJ 1\obj\Debug\net6.0-windows\ref\EJ 1.dll
