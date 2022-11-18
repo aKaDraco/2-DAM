@@ -1,0 +1,161 @@
+html {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: linear-gradient(to top, #09203f 0%, #537895 100%);
+    background-repeat: no-repeat;
+    font-family: Verdana;
+    overflow: hidden;
+}
+
+label {
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    font-family: Verdana;
+    font-size: 3rem;
+    margin-top: 4rem;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+}
+
+#div1 {
+    margin: 0px auto;
+    width: auto;
+    height: auto;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.411);
+    padding: 1rem;
+    /* background: url("R.jpeg"); */
+    /* background-size: cover; */
+    display: inline-block;
+    margin-left: 4rem;
+    font-size: 17px;
+}
+
+input {
+    background-color: rgba(255, 253, 253, 0.76);
+    border-radius: 1rem;
+    border-color: white;
+    font-size: 1rem;
+    /* margin: 1rem; */
+    padding: 0.5rem;
+    color: rgb(0, 0, 0);
+}
+
+#divnom {
+    margin-bottom: 3rem;
+}
+
+#divnom label {
+    margin-right: 1.5rem;
+}
+
+#divnom input {
+    margin-right: 1.5rem;
+}
+
+#btnr {
+    /* margin-top: 1.5rem;
+    margin-left: 30rem; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    background-color: #09203f;
+    color: rgba(255, 255, 255, 0.842);
+    border-radius: 2rem;
+    border-color: rgba(255, 255, 255, 0);
+    float: right;
+    margin-right: 0.1rem;
+}
+
+#div2 {
+    margin: 0px auto;
+    width: auto;
+    height: auto;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.411);
+    padding: 1rem;
+    /* background: url("R.jpeg"); */
+    /* background-size: cover; */
+    display: inline-block;
+    margin-left: 30rem;
+    margin-top: 5rem;
+    font-size: 17px;
+}
+
+#div3 {
+    margin: 0px auto;
+    width: auto;
+    height: auto;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.411);
+    padding: 1rem;
+    /* background: url("R.jpeg"); */
+    /* background-size: cover; */
+    display: inline-block;
+    margin-left: 25rem;
+    margin-top: 10rem;
+    font-size: 25px;
+}
+
+#ing {
+    text-align: center;
+    font-family: Verdana;
+    font-size: 2rem;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+}
+
+#btnING {
+    /* margin-top: 1.5rem;
+    margin-left: 30rem; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    background-color: #09203f;
+    color: rgba(255, 255, 255, 0.842);
+    border-radius: 2rem;
+    border-color: rgba(255, 255, 255, 0);
+    float: right;
+    margin: 0px auto;
+    margin-top: 1rem;
+}
+
+#div4 {
+    margin: 0px auto;
+    width: auto;
+    height: auto;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.411);
+    padding: 1rem;
+    /* background: url("R.jpeg"); */
+    /* background-size: cover; */
+    display: inline-block;
+    margin-left: 27rem;
+    margin-top: -1rem;
+    font-size: 20px;
+}
+
+#datos {
+    text-align: center;
+    font-family: Verdana;
+    font-size: 3rem;
+    margin-top: 1rem;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+}
+
+#btnr2 {
+    margin-top: -2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    background-color: #09203f;
+    color: rgba(255, 255, 255, 0.842);
+    border-radius: 2rem;
+    border-color: rgba(255, 255, 255, 0);
+    float: right;
+    margin-right: 0.1rem;
+}

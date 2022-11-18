@@ -1,0 +1,43 @@
+html {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: linear-gradient(to top, #09203f 0%, #537895 100%);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-family: Verdana;
+    font-size: 3rem;
+    margin-top: 1rem;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+    margin-top: 10rem;
+}
+
+#div1 {
+    margin: 0px auto;
+    width: 25rem;
+    border-radius: 1rem;
+    /* background-color: rgba(255, 255, 255, 0.411); */
+    padding: 1rem;
+    /* background: url("R.jpeg"); */
+    background-size: cover;
+}
+
+input[type="submit"] {
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.514);
+    margin-left: 2.5rem;
+    border-color: white;
+    padding: 1rem;
+    width: 20rem;
+    color: rgb(15, 15, 15);
+}

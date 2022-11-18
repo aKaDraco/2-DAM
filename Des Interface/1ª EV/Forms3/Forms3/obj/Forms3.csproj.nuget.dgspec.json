@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hugo\\OneDrive\\Documentos\\2º DAM\\Des Interface\\1ª EV\\Forms3\\Forms3\\Forms3.csproj": {}
+    "C:\\Users\\Hugo\\OneDrive\\Documentos\\DAM GitHub\\2-DAM\\Des Interface\\1ª EV\\Forms3\\Forms3\\Forms3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hugo\\OneDrive\\Documentos\\2º DAM\\Des Interface\\1ª EV\\Forms3\\Forms3\\Forms3.csproj": {
+    "C:\\Users\\Hugo\\OneDrive\\Documentos\\DAM GitHub\\2-DAM\\Des Interface\\1ª EV\\Forms3\\Forms3\\Forms3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hugo\\OneDrive\\Documentos\\2º DAM\\Des Interface\\1ª EV\\Forms3\\Forms3\\Forms3.csproj",
+        "projectUniqueName": "C:\\Users\\Hugo\\OneDrive\\Documentos\\DAM GitHub\\2-DAM\\Des Interface\\1ª EV\\Forms3\\Forms3\\Forms3.csproj",
         "projectName": "Forms3",
-        "projectPath": "C:\\Users\\Hugo\\OneDrive\\Documentos\\2º DAM\\Des Interface\\1ª EV\\Forms3\\Forms3\\Forms3.csproj",
+        "projectPath": "C:\\Users\\Hugo\\OneDrive\\Documentos\\DAM GitHub\\2-DAM\\Des Interface\\1ª EV\\Forms3\\Forms3\\Forms3.csproj",
         "packagesPath": "C:\\Users\\Hugo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hugo\\OneDrive\\Documentos\\2º DAM\\Des Interface\\1ª EV\\Forms3\\Forms3\\obj\\",
+        "outputPath": "C:\\Users\\Hugo\\OneDrive\\Documentos\\DAM GitHub\\2-DAM\\Des Interface\\1ª EV\\Forms3\\Forms3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hugo\\AppData\\Roaming\\NuGet\\NuGet.Config",
