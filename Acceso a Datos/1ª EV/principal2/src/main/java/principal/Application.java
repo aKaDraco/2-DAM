@@ -77,7 +77,7 @@ public class Application {
     try {
       fr = new FileReader(f);
       int i;
-       cont = 0;
+      cont = 0;
       while ((i = fr.read()) != -1) {
         if ((char) i == Character.toLowerCase(c) || (char) i == Character.toUpperCase(c)) {
           cont++;
@@ -178,7 +178,7 @@ public class Application {
           e.printStackTrace();
         }
         // if (fichIn != null)
-        //   fichIn.close();
+        // fichIn.close();
       }
     } catch (Exception e) {
       e.printStackTrace();
