@@ -9,22 +9,23 @@ namespace Hilos1
         static void Main(string[] args)
         {
             Thread[] tr = new Thread[2];
-            tr[0] = new Thread(incre);
-            tr[1] = new Thread(decre);
             for (int i = 0; i < 2; i++)
             {
+                tr[0] = new Thread(incre);
+                tr[1] = new Thread(decre);
                 tr[i].Start();
+
             }
-            tr[0].Join();
+                tr[i].Join();
+
             if (cont == 1000)
             {
                 Console.WriteLine("THREAD 1 WINS");
             }
-            else
+            else if (cont == -1000)
             {
                 Console.WriteLine("THREAD 2 WINS");
             }
-
         }
 
         static void incre()

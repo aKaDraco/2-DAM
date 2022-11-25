@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hugo\\OneDrive\\Documentos\\DAM GitHub\\2-DAM\\Des Interface\\1ª EV\\Archivos1\\Archivos1\\Archivos1.csproj": {}
+    "C:\\Users\\Hugo\\OneDrive\\Documentos\\2º DAM\\Des Interface\\1ª EV\\Archivos1\\Archivos1\\Archivos1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hugo\\OneDrive\\Documentos\\DAM GitHub\\2-DAM\\Des Interface\\1ª EV\\Archivos1\\Archivos1\\Archivos1.csproj": {
+    "C:\\Users\\Hugo\\OneDrive\\Documentos\\2º DAM\\Des Interface\\1ª EV\\Archivos1\\Archivos1\\Archivos1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hugo\\OneDrive\\Documentos\\DAM GitHub\\2-DAM\\Des Interface\\1ª EV\\Archivos1\\Archivos1\\Archivos1.csproj",
+        "projectUniqueName": "C:\\Users\\Hugo\\OneDrive\\Documentos\\2º DAM\\Des Interface\\1ª EV\\Archivos1\\Archivos1\\Archivos1.csproj",
         "projectName": "Archivos1",
-        "projectPath": "C:\\Users\\Hugo\\OneDrive\\Documentos\\DAM GitHub\\2-DAM\\Des Interface\\1ª EV\\Archivos1\\Archivos1\\Archivos1.csproj",
+        "projectPath": "C:\\Users\\Hugo\\OneDrive\\Documentos\\2º DAM\\Des Interface\\1ª EV\\Archivos1\\Archivos1\\Archivos1.csproj",
         "packagesPath": "C:\\Users\\Hugo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hugo\\OneDrive\\Documentos\\DAM GitHub\\2-DAM\\Des Interface\\1ª EV\\Archivos1\\Archivos1\\obj\\",
+        "outputPath": "C:\\Users\\Hugo\\OneDrive\\Documentos\\2º DAM\\Des Interface\\1ª EV\\Archivos1\\Archivos1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hugo\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -25,29 +25,17 @@ namespace Forms3
                 {
                     filePath = openFileDialog.FileName;
                     Form2 f2 = new Form2();
-                    try
+                    f2.pictureBox1.Image = Image.FromFile(filePath);
+                    String tituloF2 = openFileDialog.FileName;
+                    if (checkBox1.Checked)
                     {
-                        f2.pictureBox1.Image = Image.FromFile(filePath);
-                        String tituloF2 = openFileDialog.FileName;
-                        if (checkBox1.Checked)
-                        {
-                            f2.ShowDialog();
-                            checkBox1.ForeColor = Color.Red;
-                        }
-                        else
-                        {
-                            f2.Show();
-                            checkBox1.ForeColor = Color.Black;
-                        }
+                        f2.ShowDialog();
+                        checkBox1.ForeColor = Color.Red;
                     }
-                    catch (OutOfMemoryException)
+                    else
                     {
-                        MessageBox.Show("EROR EN EL ARCHIVO", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    catch (Exception)
-                    {
-                        MessageBox.Show("EROR EN EL ARCHIVO", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
+                        f2.Show();
+                        checkBox1.ForeColor = Color.Black;
                     }
                 }
             }

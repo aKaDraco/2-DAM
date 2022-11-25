@@ -12,7 +12,7 @@ namespace Archivos1
 
         private void cambio_Click(object sender, EventArgs e)
         {
-            if (!textBox1.Text.StartsWith('%') && !textBox1.Text.EndsWith('%'))
+            if (!textBox1.Text.StartsWith('%') && ! textBox1.Text.EndsWith('%'))
             {
                 if (Directory.Exists(textBox1.Text))
                 {
@@ -48,39 +48,28 @@ namespace Archivos1
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (listBox1.SelectedItem != null)
+            if (listBox1.SelectedIndex.Equals(0))
             {
-                if (listBox1.SelectedItem.ToString() == "..")
+                listBox1.Items.Clear();
+                directo = new DirectoryInfo(Directory.GetParent(Directory.GetCurrentDirectory()).ToString());
+                Directory.SetCurrentDirectory(Directory.GetParent(Directory.GetCurrentDirectory()).ToString());
+                listBox1.Items.Add("..");
+                foreach (DirectoryInfo item in directo.GetDirectories())
                 {
-                    if (Directory.GetCurrentDirectory().Equals("c:\\") || Directory.GetCurrentDirectory().Equals("C:\\"))
-                    {
-                        listBox1.Items.Remove("..");
-                        MessageBox.Show("DIRECTORIO RAIZ ALCANZADO", "INFORMACION", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    else
-                    {
-                        listBox1.Items.Clear();
-                        directo = new DirectoryInfo(Directory.GetParent(Directory.GetCurrentDirectory()).ToString());
-                        Directory.SetCurrentDirectory(Directory.GetParent(Directory.GetCurrentDirectory()).ToString());
-                        listBox1.Items.Add("..");
-                        foreach (DirectoryInfo item in directo.GetDirectories())
-                        {
-                            listBox1.Items.Add(item);
-                        }
-                    }
+                    listBox1.Items.Add(item);
                 }
             }
-            //else
-            //{
-            //    listBox1.Items.Clear();
-            //    directo = new DirectoryInfo(listBox1.SelectedItem.ToString());
-            //    Directory.SetCurrentDirectory(listBox1.SelectedItem.ToString());
-            //    listBox1.Items.Add("..");
-            //    foreach (DirectoryInfo item in directo.GetDirectories())
-            //    {
-            //        listBox1.Items.Add(item);
-            //    }
-            //}
+            else
+            {
+                listBox1.Items.Clear();
+                directo = new DirectoryInfo(listBox1.SelectedItem.ToString());
+                Directory.SetCurrentDirectory(listBox1.SelectedItem.ToString());
+                listBox1.Items.Add("..");
+                foreach (DirectoryInfo item in directo.GetDirectories())
+                {
+                    listBox1.Items.Add(item);
+                }
+            }
         }
     }
 }
