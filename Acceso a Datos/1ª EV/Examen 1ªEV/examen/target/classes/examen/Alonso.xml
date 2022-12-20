@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Data xmlns="http://ergast.com/mrd/1.5" series="f1" url="http://ergast.com/api/f1/2022/drivers/alonso/results" limit="30" offset="0" total="5">
+    <Number>14</Number>
+    <Name>Fernando</Name>
+    <Surname>Alonso</Surname>
+    <DateOfBirth>1981-07-29</DateOfBirth>
+    <Nationality>Spanish</Nationality>
+    <Constructor constructorId="alpine" url="http://en.wikipedia.org/wiki/Alpine_F1_Team">
+        <Name>Alpine F1 Team</Name>
+        <Nationality>French</Nationality>
+    </Constructor>
+    <RaceTable season="2022" driverId="alonso">
+        <Race season="2022" round="17" url="http://en.wikipedia.org/wiki/2022_Singapore_Grand_Prix">
+            <Name>Singapore Grand Prix</Name>
+            <Circuit circuitId="marina_bay" url="http://en.wikipedia.org/wiki/Marina_Bay_Street_Circuit">
+                <Name>Marina Bay Street Circuit</Name>
+                <Location lat="1.2914" long="103.864">
+                    <Locality>Marina Bay</Locality>
+                    <Country>Singapore</Country>
+                </Location>
+            </Circuit>
+            <Date>2022-10-02</Date>
+            <Time>12:00:00Z</Time>
+            <ResultsList>
+                <Result number="14" position="18" positionText="R" points="0">
+                    <Grid>5</Grid>
+                    <Laps>20</Laps>
+                    <Status statusId="5">Engine</Status>
+                    <FastestLap rank="16" lap="19">
+                        <Time>2:00.463</Time>
+                        <AverageSpeed units="kph">151.306</AverageSpeed>
+                    </FastestLap>
+                </Result>
+            </ResultsList>
+        </Race>
+        <Race season="2022" round="18" url="http://en.wikipedia.org/wiki/2022_Japanese_Grand_Prix">
+            <Name>Japanese Grand Prix</Name>
+            <Circuit circuitId="suzuka" url="http://en.wikipedia.org/wiki/Suzuka_Circuit">
+                <Name>Suzuka Circuit</Name>
+                <Location lat="34.8431" long="136.541">
+                    <Locality>Suzuka</Locality>
+                    <Country>Japan</Country>
+                </Location>
+            </Circuit>
+            <Date>2022-10-09</Date>
+            <Time>05:00:00Z</Time>
+            <ResultsList>
+                <Result number="14" position="7" positionText="7" points="6">
+                    <Grid>7</Grid>
+                    <Laps>28</Laps>
+                    <Status statusId="1">Finished</Status>
+                    <Time millis="10950373">+46.369</Time>
+                    <FastestLap rank="2" lap="25">
+                        <Time>1:44.412</Time>
+                        <AverageSpeed units="kph">200.218</AverageSpeed>
+                    </FastestLap>
+                </Result>
+            </ResultsList>
+        </Race>
+        <Race season="2022" round="19" url="http://en.wikipedia.org/wiki/2022_United_States_Grand_Prix">
+            <Name>United States Grand Prix</Name>
+            <Circuit circuitId="americas" url="http://en.wikipedia.org/wiki/Circuit_of_the_Americas">
+                <Name>Circuit of the Americas</Name>
+                <Location lat="30.1328" long="-97.6411">
+                    <Locality>Austin</Locality>
+                    <Country>USA</Country>
+                </Location>
+            </Circuit>
+            <Date>2022-10-23</Date>
+            <Time>19:00:00Z</Time>
+            <ResultsList>
+                <Result number="14" position="7" positionText="7" points="6">
+                    <Grid>14</Grid>
+                    <Laps>56</Laps>
+                    <Status statusId="1">Finished</Status>
+                    <Time millis="6186765">+55.078</Time>
+                    <FastestLap rank="8" lap="39">
+                        <Time>1:41.538</Time>
+                        <AverageSpeed units="kph">195.461</AverageSpeed>
+                    </FastestLap>
+                </Result>
+            </ResultsList>
+        </Race>
+        <Race season="2022" round="20" url="http://en.wikipedia.org/wiki/2022_Mexican_Grand_Prix">
+            <Name>Mexico City Grand Prix</Name>
+            <Circuit circuitId="rodriguez" url="http://en.wikipedia.org/wiki/Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez">
+                <Name>Autódromo Hermanos Rodríguez</Name>
+                <Location lat="19.4042" long="-99.0907">
+                    <Locality>Mexico City</Locality>
+                    <Country>Mexico</Country>
+                </Location>
+            </Circuit>
+            <Date>2022-10-30</Date>
+            <Time>20:00:00Z</Time>
+            <ResultsList>
+                <Result number="14" position="19" positionText="19" points="0">
+                    <Grid>9</Grid>
+                    <Laps>63</Laps>
+                    <Status statusId="5">Engine</Status>
+                    <FastestLap rank="11" lap="48">
+                        <Time>1:22.866</Time>
+                        <AverageSpeed units="kph">186.981</AverageSpeed>
+                    </FastestLap>
+                </Result>
+            </ResultsList>
+        </Race>
+        <Race season="2022" round="21" url="http://en.wikipedia.org/wiki/2022_Brazilian_Grand_Prix">
+            <Name>Brazilian Grand Prix</Name>
+            <Circuit circuitId="interlagos" url="http://en.wikipedia.org/wiki/Aut%C3%B3dromo_Jos%C3%A9_Carlos_Pace">
+                <Name>Autódromo José Carlos Pace</Name>
+                <Location lat="-23.7036" long="-46.6997">
+                    <Locality>São Paulo</Locality>
+                    <Country>Brazil</Country>
+                </Location>
+            </Circuit>
+            <Date>2022-11-13</Date>
+            <Time>18:00:00Z</Time>
+            <ResultsList>
+                <Result number="14" position="5" positionText="5" points="10">
+                    <Grid>17</Grid>
+                    <Laps>71</Laps>
+                    <Status statusId="1">Finished</Status>
+                    <Time millis="5923605">+9.561</Time>
+                    <FastestLap rank="4" lap="62">
+                        <Time>1:14.164</Time>
+                        <AverageSpeed units="kph">209.163</AverageSpeed>
+                    </FastestLap>
+                </Result>
+            </ResultsList>
+        </Race>
+    </RaceTable>
+</Data>

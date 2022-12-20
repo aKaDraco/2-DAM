@@ -1,0 +1,10 @@
+Val	Precio	Nombre
+3	21,50	Maniac Mansion
+4	22	Indiana Jones and the Last Crusade
+5	15,90	Loom
+5	10,50	Monkey Island II: LeChuck's Revenge
+4	19,75	Day of the Tentacle
+2	5,50	Sam & Max Hit the Road
+4	7	Full Throttle
+3	8,99	The Dig
+5	35,5	La abadia del crimen

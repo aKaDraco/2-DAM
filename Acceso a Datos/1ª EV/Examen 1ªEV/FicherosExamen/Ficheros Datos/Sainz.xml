@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Data xmlns="http://ergast.com/mrd/1.5" series="f1" url="http://ergast.com/api/f1/2022/drivers/sainz/results" limit="30" offset="0" total="5">
+    <Number>55</Number>
+    <Name>Carlos</Name>
+    <Surname>Sainz</Surname>
+    <DateOfBirth>1994-09-01</DateOfBirth>
+    <Nationality>Spanish</Nationality>
+    <Constructor constructorId="ferrari" url="http://en.wikipedia.org/wiki/Scuderia_Ferrari">
+        <Name>Ferrari</Name>
+        <Nationality>Italian</Nationality>
+    </Constructor>
+    <RaceTable season="2022" driverId="sainz">
+        <Race season="2022" round="17" url="http://en.wikipedia.org/wiki/2022_Singapore_Grand_Prix">
+            <Name>Singapore Grand Prix</Name>
+            <Circuit circuitId="marina_bay" url="http://en.wikipedia.org/wiki/Marina_Bay_Street_Circuit">
+                <Name>Marina Bay Street Circuit</Name>
+                <Location lat="1.2914" long="103.864">
+                    <Locality>Marina Bay</Locality>
+                    <Country>Singapore</Country>
+                </Location>
+            </Circuit>
+            <Date>2022-10-02</Date>
+            <Time>12:00:00Z</Time>
+            <ResultsList>
+                <Result number="55" position="3" positionText="3" points="15">
+                    <Grid>4</Grid>
+                    <Laps>59</Laps>
+                    <Status statusId="1">Finished</Status>
+                    <Time millis="7350543">+10.305</Time>
+                    <FastestLap rank="3" lap="59">
+                        <Time>1:48.414</Time>
+                        <AverageSpeed units="kph">168.122</AverageSpeed>
+                    </FastestLap>
+                </Result>
+            </ResultsList>
+        </Race>
+        <Race season="2022" round="18" url="http://en.wikipedia.org/wiki/2022_Japanese_Grand_Prix">
+            <Name>Japanese Grand Prix</Name>
+            <Circuit circuitId="suzuka" url="http://en.wikipedia.org/wiki/Suzuka_Circuit">
+                <Name>Suzuka Circuit</Name>
+                <Location lat="34.8431" long="136.541">
+                    <Locality>Suzuka</Locality>
+                    <Country>Japan</Country>
+                </Location>
+            </Circuit>
+            <Date>2022-10-09</Date>
+            <Time>05:00:00Z</Time>
+            <ResultsList>
+                <Result number="55" position="19" positionText="R" points="0">
+                    <Grid>3</Grid>
+                    <Laps>0</Laps>
+                    <Status statusId="3">Accident</Status>
+                </Result>
+            </ResultsList>
+        </Race>
+        <Race season="2022" round="19" url="http://en.wikipedia.org/wiki/2022_United_States_Grand_Prix">
+            <Name>United States Grand Prix</Name>
+            <Circuit circuitId="americas" url="http://en.wikipedia.org/wiki/Circuit_of_the_Americas">
+                <Name>Circuit of the Americas</Name>
+                <Location lat="30.1328" long="-97.6411">
+                    <Locality>Austin</Locality>
+                    <Country>USA</Country>
+                </Location>
+            </Circuit>
+            <Date>2022-10-23</Date>
+            <Time>19:00:00Z</Time>
+            <ResultsList>
+                <Result number="55" position="20" positionText="R" points="0">
+                    <Grid>1</Grid>
+                    <Laps>1</Laps>
+                    <Status statusId="130">Collision damage</Status>
+                </Result>
+            </ResultsList>
+        </Race>
+        <Race season="2022" round="20" url="http://en.wikipedia.org/wiki/2022_Mexican_Grand_Prix">
+            <Name>Mexico City Grand Prix</Name>
+            <Circuit circuitId="rodriguez" url="http://en.wikipedia.org/wiki/Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez">
+                <Name>Autódromo Hermanos Rodríguez</Name>
+                <Location lat="19.4042" long="-99.0907">
+                    <Locality>Mexico City</Locality>
+                    <Country>Mexico</Country>
+                </Location>
+            </Circuit>
+            <Date>2022-10-30</Date>
+            <Time>20:00:00Z</Time>
+            <ResultsList>
+                <Result number="55" position="5" positionText="5" points="10">
+                    <Grid>5</Grid>
+                    <Laps>71</Laps>
+                    <Status statusId="1">Finished</Status>
+                    <Time millis="5974852">+58.123</Time>
+                    <FastestLap rank="6" lap="32">
+                        <Time>1:22.199</Time>
+                        <AverageSpeed units="kph">188.498</AverageSpeed>
+                    </FastestLap>
+                </Result>
+            </ResultsList>
+        </Race>
+        <Race season="2022" round="21" url="http://en.wikipedia.org/wiki/2022_Brazilian_Grand_Prix">
+            <Name>Brazilian Grand Prix</Name>
+            <Circuit circuitId="interlagos" url="http://en.wikipedia.org/wiki/Aut%C3%B3dromo_Jos%C3%A9_Carlos_Pace">
+                <Name>Autódromo José Carlos Pace</Name>
+                <Location lat="-23.7036" long="-46.6997">
+                    <Locality>São Paulo</Locality>
+                    <Country>Brazil</Country>
+                </Location>
+            </Circuit>
+            <Date>2022-11-13</Date>
+            <Time>18:00:00Z</Time>
+            <ResultsList>
+                <Result number="55" position="3" positionText="3" points="15">
+                    <Grid>7</Grid>
+                    <Laps>71</Laps>
+                    <Status statusId="1">Finished</Status>
+                    <Time millis="5918095">+4.051</Time>
+                    <FastestLap rank="3" lap="65">
+                        <Time>1:13.953</Time>
+                        <AverageSpeed units="kph">209.760</AverageSpeed>
+                    </FastestLap>
+                </Result>
+            </ResultsList>
+        </Race>
+    </RaceTable>
+</Data>

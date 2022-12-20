@@ -1,0 +1,15 @@
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\1ª EV\Archivos2\Archivos2\bin\Debug\net6.0\Archivos2.exe
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\1ª EV\Archivos2\Archivos2\bin\Debug\net6.0\Archivos2.deps.json
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\1ª EV\Archivos2\Archivos2\bin\Debug\net6.0\Archivos2.runtimeconfig.json
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\1ª EV\Archivos2\Archivos2\bin\Debug\net6.0\Archivos2.dll
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\1ª EV\Archivos2\Archivos2\bin\Debug\net6.0\Archivos2.pdb
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\1ª EV\Archivos2\Archivos2\obj\Debug\net6.0\Archivos2.csproj.AssemblyReference.cache
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\1ª EV\Archivos2\Archivos2\obj\Debug\net6.0\Archivos2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\1ª EV\Archivos2\Archivos2\obj\Debug\net6.0\Archivos2.AssemblyInfoInputs.cache
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\1ª EV\Archivos2\Archivos2\obj\Debug\net6.0\Archivos2.AssemblyInfo.cs
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\1ª EV\Archivos2\Archivos2\obj\Debug\net6.0\Archivos2.csproj.CoreCompileInputs.cache
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\1ª EV\Archivos2\Archivos2\obj\Debug\net6.0\Archivos2.dll
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\1ª EV\Archivos2\Archivos2\obj\Debug\net6.0\refint\Archivos2.dll
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\1ª EV\Archivos2\Archivos2\obj\Debug\net6.0\Archivos2.pdb
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\1ª EV\Archivos2\Archivos2\obj\Debug\net6.0\Archivos2.genruntimeconfig.cache
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\1ª EV\Archivos2\Archivos2\obj\Debug\net6.0\ref\Archivos2.dll

@@ -24,7 +24,7 @@ namespace Forms6
             for (int i = 1; i < 10; i++)
             {
                 Button btn = new Button();
-                btn.BackColor = Color.White;
+                btn.BackColor = Color.Empty;
                 btn.Text = i.ToString();
                 btn.Location = new Point(x, y);
                 btn.Size = new Size(70, 50);
@@ -60,15 +60,52 @@ namespace Forms6
         {
             if (((Button)sender).BackColor != Color.Lime)
             {
-                ((Button)sender).BackColor = Color.White;
+                ((Button)sender).BackColor = Color.Empty;
             }
         }
 
         private void reset_Click(object sender, EventArgs e)
         {
             textBox1.ResetText();
-            //sender.BackColor = Color.White;
-           
+            foreach (Control item in this.Controls)
+            {
+                if (item.GetType() == typeof(Button))
+                {
+                    item.BackColor = Color.Empty;
+                }
+            }
+
+        }
+
+        private void acerdaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("INFO: LA APLICACIÓN SE TRATA DE UNA RECREACIÓN DE UN MÓVIL EN WINDOWS FORMS\n\nAUTOR: HUGO RAÑA TEIXEIRA", "INFORMACIÓN", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void grabarNúmeroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text != string.Empty)
+            {
+                StreamWriter s;
+                this.saveFileDialog1.Title = "SELECCION DE DIRECCTORIO PARA ALMACENAR";
+                this.saveFileDialog1.Filter = "Archivos de Texto (*.txt)|*.txt| Todos los archivos (*.*)|*.*";
+                this.saveFileDialog1.InitialDirectory = Environment.GetEnvironmentVariable("HOMEPATH");
+                this.saveFileDialog1.ValidateNames = true;
+                this.saveFileDialog1.ShowDialog();
+
+                s = new StreamWriter(this.saveFileDialog1.FileName);
+                s.Write(this.textBox1.Text);
+                s.Close();
+            }
+            else
+            {
+                MessageBox.Show("NO HAY NINGÚN NÚMERO PARA GUARDAR", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

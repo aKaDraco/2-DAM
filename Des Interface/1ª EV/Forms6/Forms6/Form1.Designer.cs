@@ -33,11 +33,12 @@
             this.reset = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.acerdaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grabarNúmeroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.resetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.separadorToolStripMenuItem = new System.Windows.Forms.ToolStripSeparator();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.acerdaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,39 +91,44 @@
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.archivoToolStripMenuItem.Text = "Archivo";
             // 
-            // acerdaDeToolStripMenuItem
-            // 
-            this.acerdaDeToolStripMenuItem.Name = "acerdaDeToolStripMenuItem";
-            this.acerdaDeToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
-            this.acerdaDeToolStripMenuItem.Text = "Acerda de...";
-            // 
             // grabarNúmeroToolStripMenuItem
             // 
             this.grabarNúmeroToolStripMenuItem.Name = "grabarNúmeroToolStripMenuItem";
             this.grabarNúmeroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.grabarNúmeroToolStripMenuItem.Text = "Grabar número";
+            this.grabarNúmeroToolStripMenuItem.Click += new System.EventHandler(this.grabarNúmeroToolStripMenuItem_Click);
             // 
             // resetToolStripMenuItem
             // 
             this.resetToolStripMenuItem.Name = "resetToolStripMenuItem";
             this.resetToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.resetToolStripMenuItem.Text = "Reset";
-            // 
-            // salirToolStripMenuItem
-            // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.salirToolStripMenuItem.Text = "Salir";
+            this.resetToolStripMenuItem.Click += new System.EventHandler(this.reset_Click);
             // 
             // separadorToolStripMenuItem
             // 
             this.separadorToolStripMenuItem.Name = "separadorToolStripMenuItem";
             this.separadorToolStripMenuItem.Size = new System.Drawing.Size(177, 6);
             // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
+            // acerdaDeToolStripMenuItem
+            // 
+            this.acerdaDeToolStripMenuItem.Name = "acerdaDeToolStripMenuItem";
+            this.acerdaDeToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
+            this.acerdaDeToolStripMenuItem.Text = "Acerda de...";
+            this.acerdaDeToolStripMenuItem.Click += new System.EventHandler(this.acerdaDeToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(271, 414);
             this.Controls.Add(this.reset);
             this.Controls.Add(this.textBox1);
@@ -150,5 +156,6 @@
         private ToolStripSeparator separadorToolStripMenuItem;
         private ToolStripMenuItem salirToolStripMenuItem;
         private ToolStripMenuItem acerdaDeToolStripMenuItem;
+        private SaveFileDialog saveFileDialog1;
     }
 }
