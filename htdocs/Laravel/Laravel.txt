@@ -1,0 +1,11 @@
+1- abrir xamp
+2- instalar composer (cmd>composer -v)
+3- crear proyecto (htdocs> composer create-project laravel/laravel "proyect name")
+4- crear BD
+5- .env (intrudicr BD)
+
+Comandos artisan:
+6- "proyect name">php artisan make:model "MODEL NAME MAYUS" -mc
+7- "proyect name">php artisan migrate
+8- "proyect name">php artisan serve *(-port=(puerto con numero alto))
+9- "proyect name">php artisan make:seeder CancionSeeder

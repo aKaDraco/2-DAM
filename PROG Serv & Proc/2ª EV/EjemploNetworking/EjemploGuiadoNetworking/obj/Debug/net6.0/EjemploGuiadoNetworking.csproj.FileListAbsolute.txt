@@ -1,0 +1,15 @@
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploGuiadoNetworking\bin\Debug\net6.0\EjemploGuiadoNetworking.exe
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploGuiadoNetworking\bin\Debug\net6.0\EjemploGuiadoNetworking.deps.json
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploGuiadoNetworking\bin\Debug\net6.0\EjemploGuiadoNetworking.runtimeconfig.json
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploGuiadoNetworking\bin\Debug\net6.0\EjemploGuiadoNetworking.dll
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploGuiadoNetworking\bin\Debug\net6.0\EjemploGuiadoNetworking.pdb
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploGuiadoNetworking\obj\Debug\net6.0\EjemploGuiadoNetworking.csproj.AssemblyReference.cache
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploGuiadoNetworking\obj\Debug\net6.0\EjemploGuiadoNetworking.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploGuiadoNetworking\obj\Debug\net6.0\EjemploGuiadoNetworking.AssemblyInfoInputs.cache
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploGuiadoNetworking\obj\Debug\net6.0\EjemploGuiadoNetworking.AssemblyInfo.cs
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploGuiadoNetworking\obj\Debug\net6.0\EjemploGuiadoNetworking.csproj.CoreCompileInputs.cache
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploGuiadoNetworking\obj\Debug\net6.0\EjemploGuiadoNetworking.dll
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploGuiadoNetworking\obj\Debug\net6.0\refint\EjemploGuiadoNetworking.dll
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploGuiadoNetworking\obj\Debug\net6.0\EjemploGuiadoNetworking.pdb
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploGuiadoNetworking\obj\Debug\net6.0\EjemploGuiadoNetworking.genruntimeconfig.cache
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploGuiadoNetworking\obj\Debug\net6.0\ref\EjemploGuiadoNetworking.dll

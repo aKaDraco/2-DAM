@@ -1,0 +1,15 @@
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploNetworking\bin\Debug\net6.0\EjemploNetworking.exe
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploNetworking\bin\Debug\net6.0\EjemploNetworking.deps.json
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploNetworking\bin\Debug\net6.0\EjemploNetworking.runtimeconfig.json
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploNetworking\bin\Debug\net6.0\EjemploNetworking.dll
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploNetworking\bin\Debug\net6.0\EjemploNetworking.pdb
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploNetworking\obj\Debug\net6.0\EjemploNetworking.csproj.AssemblyReference.cache
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploNetworking\obj\Debug\net6.0\EjemploNetworking.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploNetworking\obj\Debug\net6.0\EjemploNetworking.AssemblyInfoInputs.cache
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploNetworking\obj\Debug\net6.0\EjemploNetworking.AssemblyInfo.cs
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploNetworking\obj\Debug\net6.0\EjemploNetworking.csproj.CoreCompileInputs.cache
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploNetworking\obj\Debug\net6.0\EjemploNetworking.dll
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploNetworking\obj\Debug\net6.0\refint\EjemploNetworking.dll
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploNetworking\obj\Debug\net6.0\EjemploNetworking.pdb
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploNetworking\obj\Debug\net6.0\EjemploNetworking.genruntimeconfig.cache
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\EjemploNetworking\EjemploNetworking\obj\Debug\net6.0\ref\EjemploNetworking.dll

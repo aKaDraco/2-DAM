@@ -19,7 +19,7 @@ public class RacesS extends DefaultHandler {
 
         if (qname.equals("Location")) {
             for (int i = 0; i < attributes.getLength(); i++) {
-                System.out.printf("\t%s: %s%n", attributes.getLocalName(i), attributes.getValue(i));
+                System.out.printf("\t%s: %s", attributes.getLocalName(i), attributes.getValue(i));
             }
         }
 
@@ -52,9 +52,9 @@ public class RacesS extends DefaultHandler {
 
     @Override
     public void endElement(String uri, String localName, String qName) throws SAXException {
-        if (qname.equals("Circuit")) {
-            is_circuit = false;
-        }
+        // if (qname.equals("Circuit")) {
+        //     is_circuit = false;
+        // }
         qname = "";
         super.endElement(uri, localName, qName);
     }

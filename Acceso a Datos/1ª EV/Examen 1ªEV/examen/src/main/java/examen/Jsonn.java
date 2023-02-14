@@ -54,12 +54,14 @@ public class Jsonn {
                      String nombre_carrera = piloto.getJsonObject("RaceTable").getJsonArray("Races").get(i)
                                    .asJsonObject().getString("Name");
                      JsonNumber lat_carrera = piloto.getJsonObject("RaceTable").getJsonArray("Races").get(i)
-                                   .asJsonObject().getJsonObject("Circuit").getJsonObject("Location").getJsonNumber("lat");
-                     Double lat_double = Double.parseDouble(lat_carrera+"");
+                                   .asJsonObject().getJsonObject("Circuit").getJsonObject("Location")
+                                   .getJsonNumber("lat");
+                     Double lat_double = Double.parseDouble(lat_carrera + "");
 
                      JsonNumber long_carrera = piloto.getJsonObject("RaceTable").getJsonArray("Races").get(i)
-                                   .asJsonObject().getJsonObject("Circuit").getJsonObject("Location").getJsonNumber("long");
-                     Double long_double = Double.parseDouble(long_carrera+"");
+                                   .asJsonObject().getJsonObject("Circuit").getJsonObject("Location")
+                                   .getJsonNumber("long");
+                     Double long_double = Double.parseDouble(long_carrera + "");
                      cont++;
                      System.out.println("Circuito" + cont + ": " + nombre_carrera + "\n\tLat: " + lat_double
                                    + "\n\tLong: " + long_carrera);
