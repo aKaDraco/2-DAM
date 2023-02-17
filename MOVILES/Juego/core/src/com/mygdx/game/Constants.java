@@ -7,4 +7,5 @@ public class Constants {
     public static final float RAT_SPEED = -2;
     public static final float MID_SCREEN = 420;
     public static final float DIVIDE = 100;
+    public static final float FLOOR_SIZE = 100;
 }

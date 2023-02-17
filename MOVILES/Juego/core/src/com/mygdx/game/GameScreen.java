@@ -1,5 +1,7 @@
 package com.mygdx.game;
 
+import static com.mygdx.game.Constants.IMPULSE_JUMP;
+
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
@@ -10,6 +12,7 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
+import com.badlogic.gdx.physics.box2d.Body;
 import com.badlogic.gdx.physics.box2d.Contact;
 import com.badlogic.gdx.physics.box2d.ContactImpulse;
 import com.badlogic.gdx.physics.box2d.ContactListener;
@@ -25,9 +28,11 @@ import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.I18NBundle;
 import com.badlogic.gdx.utils.viewport.StretchViewport;
+import com.mygdx.game.entities.BatEntity;
 import com.mygdx.game.entities.FloorEntity;
 import com.mygdx.game.entities.PlayerEntity;
 import com.mygdx.game.entities.RatEntity;
+import com.mygdx.game.entities.SnakeEntity;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -35,6 +40,7 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.Locale;
+import java.util.Random;
 
 public class GameScreen extends BaseScreen {
 
@@ -45,13 +51,11 @@ public class GameScreen extends BaseScreen {
 
     private List<FloorEntity> floorList = new ArrayList<FloorEntity>();
 
-    private List<RatEntity> ratList = new ArrayList<RatEntity>();
-
     private Music gameMusic, dieMusic;
 
     private Sound jump, ratSound;
 
-    private Texture playerTexture, floorTexture, overfloorTexture, ratTexture, jumpTexture, shootTexture;
+    private Texture playerTexture, floorTexture, overfloorTexture, ratTexture, jumpTexture, shootTexture, snakeTexture, batTexture;
 
     private Vector3 camPos;
 
@@ -71,15 +75,26 @@ public class GameScreen extends BaseScreen {
 
     private String scoreFormat;
 
-    private Float floorPos = 0f;
+    private Float accum = 0f, delay, magoPos = 0f, floorPos = 0f;
 
-    private int cameraPosFloor = 0;
+    private boolean floorSpawned = false;
 
     public GameScreen(final MyMagoGame game) {
         super(game);
         stage = new Stage(new StretchViewport(840, 560));
+        world = new World(new Vector2(0, -10), true);
 
         camPos = new Vector3(stage.getCamera().position);
+
+        playerTexture = game.getManager().get("MagoStand.png");
+        floorTexture = game.getManager().get("Floor.png");
+        overfloorTexture = game.getManager().get("Overfloor.png");
+        ratTexture = game.getManager().get("Rata.png");
+        snakeTexture = game.getManager().get("Serpiente.png");
+        batTexture = game.getManager().get("Murcielago.png");
+        player = new PlayerEntity(world, playerTexture, new Vector2(1.5f, 1.5f));
+
+        floorList.add(new FloorEntity(world, floorTexture, overfloorTexture, 0, 1, Constants.FLOOR_SIZE));
 
         labelStyle = new Label.LabelStyle();
         font = new BitmapFont(Gdx.files.internal("GameFont.fnt"));
@@ -93,7 +108,6 @@ public class GameScreen extends BaseScreen {
         score.setPosition(500, Gdx.graphics.getHeight());
         score.setAlignment(Align.right);
 
-        world = new World(new Vector2(0, -10), true);
 
         gameMusic = game.getManager().get("GameSong.ogg");
         dieMusic = game.getManager().get("GameOver.ogg");
@@ -114,7 +128,10 @@ public class GameScreen extends BaseScreen {
         jumpImage.addCaptureListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent event, Actor actor) {
-                player.jump();
+                if (!player.isJumping()) {
+                    jump.play();
+                    player.jump();
+                }
             }
         });
 
@@ -129,7 +146,8 @@ public class GameScreen extends BaseScreen {
         world.setContactListener(new ContactListener() {
 
             private boolean areCollied(Contact contact, Object userA, Object userB) {
-                return (contact.getFixtureA().getUserData().equals(userA) && contact.getFixtureB().getUserData().equals(userB)) || (contact.getFixtureA().getUserData().equals(userB) && contact.getFixtureB().getUserData().equals(userA));
+                return (contact.getFixtureA().getUserData().equals(userA) && contact.getFixtureB().getUserData().equals(userB)) ||
+                        (contact.getFixtureA().getUserData().equals(userB) && contact.getFixtureB().getUserData().equals(userA));
             }
 
             @Override
@@ -143,13 +161,8 @@ public class GameScreen extends BaseScreen {
 
                 if (areCollied(contact, "player", "rat")) {
                     player.setAlive(false);
-                    for (int i = 0; i < ratList.size(); i++) {
-                        ratList.get(i).setDead(true);
-                    }
                     gameMusic.stop();
-
                     dieMusic.play();
-
                     stage.addAction(Actions.sequence(Actions.delay(1), Actions.run(new Runnable() {
                         @Override
                         public void run() {
@@ -160,7 +173,16 @@ public class GameScreen extends BaseScreen {
 
                 if (areCollied(contact, "player", "leftBox")) {
                     player.setAlive(false);
+
+                    stage.addAction(Actions.sequence(Actions.delay(1), Actions.run(new Runnable() {
+                        @Override
+                        public void run() {
+                            game.setScreen(game.gameOverScreen);
+                        }
+                    })));
                 }
+
+
             }
 
             @Override
@@ -170,7 +192,16 @@ public class GameScreen extends BaseScreen {
 
             @Override
             public void preSolve(Contact contact, Manifold oldManifold) {
+                if (areCollied(contact, "rat", "rightBox")) {
+                    Body body = null;
+                    if (contact.getFixtureA().getBody().equals("rat")) {
+                        body = contact.getFixtureA().getBody();
+                    } else {
+                        body = contact.getFixtureB().getBody();
+                    }
+                    body.applyLinearImpulse(body.getLinearVelocity().x, IMPULSE_JUMP / 1.9f, body.getPosition().x, body.getPosition().y, true);
 
+                }
             }
 
             @Override
@@ -178,19 +209,12 @@ public class GameScreen extends BaseScreen {
 
             }
         });
+
     }
 
     @Override
     public void show() {
-
-        playerTexture = game.getManager().get("MagoStand.png");
-        floorTexture = game.getManager().get("Floor.png");
-        overfloorTexture = game.getManager().get("Overfloor.png");
-        ratTexture = game.getManager().get("Rata.png");
-        player = new PlayerEntity(world, playerTexture, new Vector2(1.5f, 1.5f));
-
-        floorList.add(new FloorEntity(world, floorTexture, overfloorTexture, floorPos, 1, 1000));
-
+        Gdx.input.setInputProcessor(stage);
 
         stage.addActor(player);
         stage.addActor(score);
@@ -201,55 +225,62 @@ public class GameScreen extends BaseScreen {
         for (FloorEntity floor : floorList) {
             stage.addActor(floor);
         }
-        for (RatEntity rat : ratList) {
-            stage.addActor(rat);
-        }
+
         stage.addActor(jumpImage);
         stage.addActor(shootImage);
 
         gameMusic.play();
+        gameMusic.setLooping(true);
     }
 
     @Override
     public void hide() {
-        stage.clear();
+        Gdx.input.setInputProcessor(null);
 
         player.detach();
         for (FloorEntity floor : floorList) {
             floor.detach();
             floor.remove();
         }
-        for (RatEntity rat : ratList) {
-            rat.detach();
-            rat.remove();
-        }
 
         score.remove();
-
+        jumpImage.remove();
+        shootImage.remove();
         floorList.clear();
-        ratList.clear();
+
+        stage.getActors().clear();
+        stage.clear();
     }
 
     @Override
     public void render(float delta) {
         Gdx.gl.glClearColor(0.2f, 0.2f, 0.2f, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+
+        accum += delta;
+        delay = 1f;
+
         loadBackground();
 
         stage.act();
         world.step(delta, 6, 2);
 
-        if (player.getX() > 150 && player.isAlive()) {
+        if (player.isAlive() && player.getX() > 150) {
             stage.getCamera().translate(Constants.PLAYER_SPEED * delta * Constants.PIXELS_IN_METER, 0, 0);
         }
 
         score.setPosition(stage.getCamera().position.x + 200, score.getY());
-        jumpImage.setPosition(stage.getCamera().position.x - 200, 0);
-        shootImage.setPosition(stage.getCamera().position.x + 200, 0);
+        jumpImage.setPosition(stage.getCamera().position.x - 400, 0);
+        shootImage.setPosition(stage.getCamera().position.x + 320, 0);
 
-        if (Gdx.input.isTouched() && !player.isJumping()) {
+        if (!player.isJumping() && jumpImage.isPressed()) {
             jump.play();
             player.jump();
+        }
+
+        if (accum >= delay) {
+            accum = 0f;
+            randGame();
         }
 
         stage.draw();
@@ -257,6 +288,17 @@ public class GameScreen extends BaseScreen {
 
     @Override
     public void dispose() {
+        gameMusic.dispose();
+        jump.dispose();
+        ratSound.dispose();
+        playerTexture.dispose();
+        floorTexture.dispose();
+        overfloorTexture.dispose();
+        ratTexture.dispose();
+        snakeTexture.dispose();
+        batTexture.dispose();
+        jumpTexture.dispose();
+        shootTexture.dispose();
         stage.dispose();
         world.dispose();
     }
@@ -267,5 +309,42 @@ public class GameScreen extends BaseScreen {
         calendar.setTime(date);
 
         scoreFormat = calendar.get(Calendar.HOUR_OF_DAY) + ":" + calendar.get(Calendar.MINUTE);
+    }
+
+    public void randGame() {
+        magoPos = player.getX() / Constants.PIXELS_IN_METER;
+        if (player.isAlive()) {
+
+            //SPAWN DE SUELO INFINITO
+            if (floorPos - magoPos < 20f) {
+                stage.addActor(new FloorEntity(world, floorTexture, overfloorTexture, floorPos, 1, Constants.FLOOR_SIZE));
+                shootImage.toFront();
+                jumpImage.toFront();
+                floorPos += 100f;
+            }
+
+            //SPAWN DE ELEVACIONES DE SUELO
+            int floorRand = (int) (Math.random() * 101 + 0);
+            if (floorRand > 80) {
+                stage.addActor(new FloorEntity(world, floorTexture, overfloorTexture, player.getX() / Constants.PIXELS_IN_METER + 20, 2, 10));
+                jumpImage.toFront();
+                shootImage.toFront();
+            }
+
+            //SPAWN DE ENEMIGOS ALEATORIO
+            int enemyRand = (int) (Math.random() * 100 + 0);
+            System.out.println("ENEMY RAND:    " + enemyRand);
+            if (enemyRand <= 33) {
+                System.out.println("RAT SPAWNED");
+                stage.addActor(new RatEntity(world, ratTexture, player.getX() / Constants.PIXELS_IN_METER + 20, 3));
+            } else if (enemyRand > 33 && enemyRand <= 66) {
+                System.out.println("SNAKE SPAWNED");
+                stage.addActor(new SnakeEntity(world, snakeTexture, player.getX() / Constants.PIXELS_IN_METER + 20, 3));
+            } else {
+                int randBatSpawn = (int) (Math.random() * 6 + 3);
+                System.out.println("BAT SPAWNED");
+                stage.addActor(new BatEntity(world, batTexture, player.getX() / Constants.PIXELS_IN_METER + 20, randBatSpawn));
+            }
+        }
     }
 }

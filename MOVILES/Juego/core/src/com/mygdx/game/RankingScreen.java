@@ -80,16 +80,16 @@ public class RankingScreen extends BaseScreen {
         stage.addActor(score);
         stage.addActor(quitButton);
 
-        while (player.isAlive()) {
-            cameraPosFloor++;
-            if (cameraPosFloor >= 950) {
-                cameraPosFloor = 0;
-                if (cameraPosFloor == 0) {
-                    floorPos = 950f;
-                    floorList.add(new FloorEntity(world, floorTexture, overfloorTexture, floorPos, 1, 1000));
-                }
-            }
-        }
+//        while (player.isAlive()) {
+//            cameraPosFloor++;
+//            if (cameraPosFloor >= 950) {
+//                cameraPosFloor = 0;
+//                if (cameraPosFloor == 0) {
+//                    floorPos = 950f;
+//                    floorList.add(new FloorEntity(world, floorTexture, overfloorTexture, floorPos, 1, 1000));
+//                }
+//            }
+//        }
     }
 
     @Override

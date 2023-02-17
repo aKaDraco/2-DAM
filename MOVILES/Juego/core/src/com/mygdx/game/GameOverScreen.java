@@ -55,24 +55,29 @@ public class GameOverScreen extends BaseScreen {
         gameOver.setPosition(MID_SCREEN - gameOver.getWidth() / 2, MID_SCREEN - gameOver.getHeight() / 2);
         retry.setPosition(550 - gameOver.getWidth() / 2, 220 - gameOver.getHeight() / 2);
         menu.setPosition(550 - gameOver.getWidth() / 2, 120 - gameOver.getHeight() / 2);
-
-        stage.addActor(gameOver);
-        stage.addActor(retry);
-        stage.addActor(menu);
     }
 
     @Override
     public void show() {
+        stage.addActor(gameOver);
+        stage.addActor(retry);
+        stage.addActor(menu);
+
         Gdx.input.setInputProcessor(stage);
     }
 
     @Override
     public void hide() {
         Gdx.input.setInputProcessor(null);
+        gameOver.remove();
+        retry.remove();
+        menu.remove();
     }
 
     @Override
     public void dispose() {
+        retryTexture.dispose();
+        menuTexture.dispose();
         stage.dispose();
     }
 

@@ -1,6 +1,6 @@
 ﻿namespace Ejercicio1_Networking
 {
-    partial class Form1
+    partial class Cliente
     {
         /// <summary>
         ///  Required designer variable.
@@ -34,7 +34,8 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.pass = new System.Windows.Forms.Label();
             this.boxPass = new System.Windows.Forms.TextBox();
-            this.resultado = new System.Windows.Forms.Label();
+            this.labelResultado = new System.Windows.Forms.Label();
+            this.changeIP = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnTime
@@ -93,29 +94,43 @@
             this.boxPass.Size = new System.Drawing.Size(100, 23);
             this.boxPass.TabIndex = 5;
             // 
-            // resultado
+            // labelResultado
             // 
-            this.resultado.AutoSize = true;
-            this.resultado.Location = new System.Drawing.Point(141, 134);
-            this.resultado.Name = "resultado";
-            this.resultado.Size = new System.Drawing.Size(38, 15);
-            this.resultado.TabIndex = 6;
-            this.resultado.Text = "label2";
+            this.labelResultado.AutoSize = true;
+            this.labelResultado.Location = new System.Drawing.Point(33, 139);
+            this.labelResultado.Name = "labelResultado";
+            this.labelResultado.Size = new System.Drawing.Size(59, 15);
+            this.labelResultado.TabIndex = 6;
+            this.labelResultado.Text = "Resultado";
             // 
-            // Form1
+            // changeIP
+            // 
+            this.changeIP.AutoSize = true;
+            this.changeIP.Font = new System.Drawing.Font("Segoe UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.changeIP.Location = new System.Drawing.Point(249, 9);
+            this.changeIP.Name = "changeIP";
+            this.changeIP.Size = new System.Drawing.Size(66, 17);
+            this.changeIP.TabIndex = 7;
+            this.changeIP.Text = "ChangeIP";
+            this.changeIP.Click += new System.EventHandler(this.changeIP_Click);
+            this.changeIP.MouseEnter += new System.EventHandler(this.changeIP_MouseEnter);
+            this.changeIP.MouseLeave += new System.EventHandler(this.changeIP_MouseLeave);
+            // 
+            // Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(327, 163);
-            this.Controls.Add(this.resultado);
+            this.Controls.Add(this.changeIP);
+            this.Controls.Add(this.labelResultado);
             this.Controls.Add(this.boxPass);
             this.Controls.Add(this.pass);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnAll);
             this.Controls.Add(this.btnDate);
             this.Controls.Add(this.btnTime);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Cliente";
+            this.Text = "CLIENTE";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,6 +144,7 @@
         private Button btnClose;
         private Label pass;
         private TextBox boxPass;
-        private Label resultado;
+        private Label labelResultado;
+        private Label changeIP;
     }
 }

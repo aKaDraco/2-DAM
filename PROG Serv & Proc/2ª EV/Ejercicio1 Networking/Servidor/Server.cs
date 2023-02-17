@@ -3,7 +3,7 @@ using System.Net.Sockets;
 
 namespace Servidor
 {
-    internal class Program
+    internal class Server
     {
         static void Main(string[] args)
         {
@@ -53,7 +53,6 @@ namespace Servidor
                 try
                 {
                     mensaje = sr.ReadLine();
-                    sw.WriteLine(mensaje);
                     sw.Flush();
 
                     if (mensaje != null)
@@ -61,13 +60,13 @@ namespace Servidor
                         switch (mensaje)
                         {
                             case "time":
-                                sw.WriteLine("Time: {0}", DateTime.Now.ToString("t"));
+                                sw.WriteLine("Time ({0})", DateTime.Now.ToString("t"));
                                 break;
                             case "date":
-                                sw.WriteLine("Date: {0}", DateTime.Now.ToString("d"));
+                                sw.WriteLine("Date ({0})", DateTime.Now.ToString("d"));
                                 break;
                             case "all":
-                                sw.WriteLine("Date and time: {0}", DateTime.Now.ToString("g"));
+                                sw.WriteLine("Date and time ({0})", DateTime.Now.ToString("g"));
                                 break;
                             case "close":
                                 using (StreamReader srPass = new StreamReader(Environment.GetEnvironmentVariable("%PROGRAMDATA%") + "\\password.txt"))
@@ -101,6 +100,8 @@ namespace Servidor
                 {
                     Console.WriteLine("ERROR");
                 }
+                sw.Flush();
+                Console.WriteLine("USER DISCONECTED");
             }
         }
     }
