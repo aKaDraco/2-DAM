@@ -6,3 +6,13 @@ C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\Exame
 C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\ExamenEv2PruebaHugoRaña\ExamenEv2PruebaHugoRaña\bin\Debug\ExamenEv2PruebaHugoRaña.pdb
 C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\ExamenEv2PruebaHugoRaña\ExamenEv2PruebaHugoRaña\obj\Debug\ExamenEv2PruebaHugoRaña.dll
 C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\ExamenEv2PruebaHugoRaña\ExamenEv2PruebaHugoRaña\obj\Debug\ExamenEv2PruebaHugoRaña.pdb
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\Des Interface\2ª EV\ExamenEv2PruebaHugoRaña\ExamenEv2PruebaHugoRaña\bin\Debug\ExamenEv2PruebaHugoRaña.dll
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\Des Interface\2ª EV\ExamenEv2PruebaHugoRaña\ExamenEv2PruebaHugoRaña\bin\Debug\ExamenEv2PruebaHugoRaña.pdb
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\Des Interface\2ª EV\ExamenEv2PruebaHugoRaña\ExamenEv2PruebaHugoRaña\obj\Debug\ExamenEv2PruebaHugoRaña.csproj.AssemblyReference.cache
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\Des Interface\2ª EV\ExamenEv2PruebaHugoRaña\ExamenEv2PruebaHugoRaña\obj\Debug\ExamenEv2PruebaHugoRaña.ValidateTextBox.resources
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\Des Interface\2ª EV\ExamenEv2PruebaHugoRaña\ExamenEv2PruebaHugoRaña\obj\Debug\ExamenEv2PruebaHugoRaña.csproj.GenerateResource.cache
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\Des Interface\2ª EV\ExamenEv2PruebaHugoRaña\ExamenEv2PruebaHugoRaña\obj\Debug\ExamenEv2PruebaHugoRaña.csproj.CoreCompileInputs.cache
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\Des Interface\2ª EV\ExamenEv2PruebaHugoRaña\ExamenEv2PruebaHugoRaña\obj\Debug\ExamenEv2PruebaHugoRaña.dll
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\Des Interface\2ª EV\ExamenEv2PruebaHugoRaña\ExamenEv2PruebaHugoRaña\obj\Debug\ExamenEv2PruebaHugoRaña.pdb
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\Des Interface\2ª EV\ExamenEv2PruebaHugoRaña\ExamenEv2PruebaHugoRaña\obj\Debug\ExamenEv2PruebaHugoRaña.Datos.resources
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\Des Interface\2ª EV\ExamenEv2PruebaHugoRaña\ExamenEv2PruebaHugoRaña\obj\Debug\ExamenEv2PruebaHugoRaña.Principal.resources

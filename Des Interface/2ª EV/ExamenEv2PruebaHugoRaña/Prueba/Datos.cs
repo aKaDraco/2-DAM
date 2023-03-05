@@ -15,6 +15,10 @@ namespace ExamenEv2PruebaHugoRaña
         public Datos()
         {
             InitializeComponent();
+            foreach (sFriki.eAficion aficion in Enum.GetValues(typeof(sFriki.eAficion)))
+            {
+                comboBox1.Items.Add(aficion);
+            }
         }
     }
 }

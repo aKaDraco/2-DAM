@@ -33,5 +33,35 @@ namespace ExamenEv2PruebaHugoRaña
                 return sexoOpuesto;
             }
         }
+
+        private String foto;
+
+        public String Foto
+        {
+            set
+            {
+                foto = value;
+            }
+            get
+            {
+                return foto;
+            }
+        }
+
+        public sFriki(string nombre, int edad, eSexo sexoOpuesto, string foto)
+        {
+            this.nombre = nombre;
+            this.edad = edad;
+            this.sexoOpuesto = sexoOpuesto;
+            this.foto = foto;
+        }
+
+        public sFriki()
+        {
+            this.nombre = "";
+            this.edad = 0;
+            this.sexoOpuesto = eSexo.Hombre;
+            this.foto = foto;
+        }
     }
 }
