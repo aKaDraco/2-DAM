@@ -1,0 +1,11 @@
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe.config
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.pdb
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\obj\Debug\WindowsServiceGuiado.csproj.AssemblyReference.cache
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\obj\Debug\WindowsServiceGuiado.csproj.SuggestedBindingRedirects.cache
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\obj\Debug\WindowsService_Guiado.ProjectInstaller.resources
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\obj\Debug\WindowsService_Guiado.SimpleService.resources
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\obj\Debug\WindowsServiceGuiado.csproj.GenerateResource.cache
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\obj\Debug\WindowsServiceGuiado.csproj.CoreCompileInputs.cache
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\obj\Debug\WindowsServiceGuiado.exe
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\obj\Debug\WindowsServiceGuiado.pdb

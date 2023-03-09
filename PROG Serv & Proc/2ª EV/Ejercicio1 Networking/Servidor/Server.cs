@@ -8,7 +8,19 @@ namespace Servidor
         static void Main(string[] args)
         {
             bool good = true;
-            IPEndPoint ie = new IPEndPoint(IPAddress.Any, 54768);
+            int port = 31416;
+            string portPath = Environment.GetEnvironmentVariable("%PROGRAMDATA%") + "config.txt";
+            if (File.Exists(portPath))
+            {
+                using (StreamReader sr = new StreamReader(portPath))
+                {
+                    if (sr.ReadToEnd() != null)
+                    {
+                        port = Convert.ToInt32(sr.ReadLine());
+                    }
+                }
+            }
+            IPEndPoint ie = new IPEndPoint(IPAddress.Any, port);
 
             Socket sServidor = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             try

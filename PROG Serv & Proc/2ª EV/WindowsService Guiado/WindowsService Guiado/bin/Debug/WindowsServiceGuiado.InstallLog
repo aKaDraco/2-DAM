@@ -1,0 +1,276 @@
+﻿Instalando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Instalando el servicio SimpleService...
+El servicio SimpleService se ha instalado correctamente.
+Creando el origen de EventLog SimpleService en el registro Application...
+Confirmando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Desinstalando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Quitando el origen de EventLog SimpleService.
+Se está quitando el servicio SimpleService del sistema...
+El servicio SimpleService se ha quitado correctamente del sistema.
+Instalando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Instalando el servicio SimpleService...
+El servicio SimpleService se ha instalado correctamente.
+Creando el origen de EventLog SimpleService en el registro Application...
+Confirmando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Desinstalando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Quitando el origen de EventLog SimpleService.
+Se está quitando el servicio SimpleService del sistema...
+El servicio SimpleService se ha quitado correctamente del sistema.
+Instalando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Instalando el servicio SimpleService...
+El servicio SimpleService se ha instalado correctamente.
+Creando el origen de EventLog SimpleService en el registro Application...
+Confirmando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Desinstalando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Quitando el origen de EventLog SimpleService.
+Se está quitando el servicio SimpleService del sistema...
+El servicio SimpleService se ha quitado correctamente del sistema.
+Intento de detener el servicio SimpleService.
+Instalando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Instalando el servicio SimpleService...
+Creando el origen de EventLog SimpleService en el registro Application...
+Deshaciendo ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Restaurando el registro de eventos al estado anterior para el origen SimpleService.
+Desinstalando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Quitando el origen de EventLog SimpleService.
+Advertencia: el origen SimpleService no está registrado en el equipo local.
+Se está quitando el servicio SimpleService del sistema...
+El servicio SimpleService se ha quitado correctamente del sistema.
+Intento de detener el servicio SimpleService.
+Instalando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Instalando el servicio SimpleService...
+Creando el origen de EventLog SimpleService en el registro Application...
+Deshaciendo ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Restaurando el registro de eventos al estado anterior para el origen SimpleService.
+Desinstalando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Quitando el origen de EventLog SimpleService.
+Advertencia: el origen SimpleService no está registrado en el equipo local.
+Se está quitando el servicio SimpleService del sistema...
+El servicio SimpleService se ha quitado correctamente del sistema.
+Intento de detener el servicio SimpleService.
+Instalando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Instalando el servicio SimpleService...
+Creando el origen de EventLog SimpleService en el registro Application...
+Deshaciendo ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Restaurando el registro de eventos al estado anterior para el origen SimpleService.
+Instalando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Instalando el servicio SimpleService...
+El servicio SimpleService se ha instalado correctamente.
+Creando el origen de EventLog SimpleService en el registro Application...
+Confirmando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Desinstalando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Quitando el origen de EventLog SimpleService.
+Se está quitando el servicio SimpleService del sistema...
+El servicio SimpleService se ha quitado correctamente del sistema.
+Intento de detener el servicio SimpleService.
+Instalando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Instalando el servicio SimpleService...
+Creando el origen de EventLog SimpleService en el registro Application...
+Deshaciendo ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Restaurando el registro de eventos al estado anterior para el origen SimpleService.
+Instalando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Instalando el servicio SimpleService...
+El servicio SimpleService se ha instalado correctamente.
+Creando el origen de EventLog SimpleService en el registro Application...
+Confirmando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Instalando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Instalando el servicio SimpleService...
+Creando el origen de EventLog SimpleService en el registro Application...
+Deshaciendo ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Restaurando el registro de eventos al estado anterior para el origen SimpleService.
+Desinstalando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Quitando el origen de EventLog SimpleService.
+Se está quitando el servicio SimpleService del sistema...
+El servicio SimpleService se ha quitado correctamente del sistema.
+Instalando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Instalando el servicio SimpleService...
+El servicio SimpleService se ha instalado correctamente.
+Creando el origen de EventLog SimpleService en el registro Application...
+Confirmando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Desinstalando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Quitando el origen de EventLog SimpleService.
+Se está quitando el servicio SimpleService del sistema...
+El servicio SimpleService se ha quitado correctamente del sistema.
+Instalando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Instalando el servicio SimpleService...
+El servicio SimpleService se ha instalado correctamente.
+Creando el origen de EventLog SimpleService en el registro Application...
+Confirmando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Desinstalando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Quitando el origen de EventLog SimpleService.
+Se está quitando el servicio SimpleService del sistema...
+El servicio SimpleService se ha quitado correctamente del sistema.
+Instalando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Instalando el servicio SimpleService...
+El servicio SimpleService se ha instalado correctamente.
+Creando el origen de EventLog SimpleService en el registro Application...
+Confirmando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Desinstalando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Quitando el origen de EventLog SimpleService.
+Se está quitando el servicio SimpleService del sistema...
+El servicio SimpleService se ha quitado correctamente del sistema.
+Instalando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Instalando el servicio SimpleService...
+El servicio SimpleService se ha instalado correctamente.
+Creando el origen de EventLog SimpleService en el registro Application...
+Confirmando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Desinstalando ensamblado 'C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.InstallLog
+   assemblypath = C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\2ª EV\WindowsService Guiado\WindowsService Guiado\bin\Debug\WindowsServiceGuiado.exe
+Quitando el origen de EventLog SimpleService.
+Se está quitando el servicio SimpleService del sistema...
+El servicio SimpleService se ha quitado correctamente del sistema.
