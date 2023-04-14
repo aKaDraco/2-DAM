@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alumnoinfo\\Desktop\\MiguelezMiguel_Serv1aEv\\Ejercicio1_REPASO\\Ejercicio1_REPASO\\Ejercicio1_REPASO.csproj": {}
+    "C:\\Users\\Hugo\\OneDrive\\Documentos\\DAM GitHub\\2-DAM\\PROG Serv & Proc\\Ejercicio1_REPASO\\Ejercicio1_REPASO\\Ejercicio1_REPASO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alumnoinfo\\Desktop\\MiguelezMiguel_Serv1aEv\\Ejercicio1_REPASO\\Ejercicio1_REPASO\\Ejercicio1_REPASO.csproj": {
+    "C:\\Users\\Hugo\\OneDrive\\Documentos\\DAM GitHub\\2-DAM\\PROG Serv & Proc\\Ejercicio1_REPASO\\Ejercicio1_REPASO\\Ejercicio1_REPASO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alumnoinfo\\Desktop\\MiguelezMiguel_Serv1aEv\\Ejercicio1_REPASO\\Ejercicio1_REPASO\\Ejercicio1_REPASO.csproj",
+        "projectUniqueName": "C:\\Users\\Hugo\\OneDrive\\Documentos\\DAM GitHub\\2-DAM\\PROG Serv & Proc\\Ejercicio1_REPASO\\Ejercicio1_REPASO\\Ejercicio1_REPASO.csproj",
         "projectName": "Ejercicio1_REPASO",
-        "projectPath": "C:\\Users\\alumnoinfo\\Desktop\\MiguelezMiguel_Serv1aEv\\Ejercicio1_REPASO\\Ejercicio1_REPASO\\Ejercicio1_REPASO.csproj",
-        "packagesPath": "C:\\Users\\alumnoinfo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alumnoinfo\\Desktop\\MiguelezMiguel_Serv1aEv\\Ejercicio1_REPASO\\Ejercicio1_REPASO\\obj\\",
+        "projectPath": "C:\\Users\\Hugo\\OneDrive\\Documentos\\DAM GitHub\\2-DAM\\PROG Serv & Proc\\Ejercicio1_REPASO\\Ejercicio1_REPASO\\Ejercicio1_REPASO.csproj",
+        "packagesPath": "C:\\Users\\Hugo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Hugo\\OneDrive\\Documentos\\DAM GitHub\\2-DAM\\PROG Serv & Proc\\Ejercicio1_REPASO\\Ejercicio1_REPASO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\alumnoinfo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hugo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

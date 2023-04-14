@@ -18,8 +18,8 @@ namespace Ejercicio1_REPASO
         }
         public Astro(string nombre, double radio)
         {
-            this.nombre = nombre;
-            this.radio = radio;
+            this.Nombre = nombre;
+            this.Radio = radio;
         }
 
         public double Radio
