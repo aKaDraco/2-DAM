@@ -1,0 +1,15 @@
+C:\Users\alumnoinfo\Desktop\MiguelezMiguel_Serv1aEv\Ejercicio1_REPASO\Ejercicio1_REPASO\bin\Debug\net6.0\Ejercicio1_REPASO.exe
+C:\Users\alumnoinfo\Desktop\MiguelezMiguel_Serv1aEv\Ejercicio1_REPASO\Ejercicio1_REPASO\bin\Debug\net6.0\Ejercicio1_REPASO.deps.json
+C:\Users\alumnoinfo\Desktop\MiguelezMiguel_Serv1aEv\Ejercicio1_REPASO\Ejercicio1_REPASO\bin\Debug\net6.0\Ejercicio1_REPASO.runtimeconfig.json
+C:\Users\alumnoinfo\Desktop\MiguelezMiguel_Serv1aEv\Ejercicio1_REPASO\Ejercicio1_REPASO\bin\Debug\net6.0\Ejercicio1_REPASO.dll
+C:\Users\alumnoinfo\Desktop\MiguelezMiguel_Serv1aEv\Ejercicio1_REPASO\Ejercicio1_REPASO\bin\Debug\net6.0\Ejercicio1_REPASO.pdb
+C:\Users\alumnoinfo\Desktop\MiguelezMiguel_Serv1aEv\Ejercicio1_REPASO\Ejercicio1_REPASO\obj\Debug\net6.0\Ejercicio1_REPASO.csproj.AssemblyReference.cache
+C:\Users\alumnoinfo\Desktop\MiguelezMiguel_Serv1aEv\Ejercicio1_REPASO\Ejercicio1_REPASO\obj\Debug\net6.0\Ejercicio1_REPASO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alumnoinfo\Desktop\MiguelezMiguel_Serv1aEv\Ejercicio1_REPASO\Ejercicio1_REPASO\obj\Debug\net6.0\Ejercicio1_REPASO.AssemblyInfoInputs.cache
+C:\Users\alumnoinfo\Desktop\MiguelezMiguel_Serv1aEv\Ejercicio1_REPASO\Ejercicio1_REPASO\obj\Debug\net6.0\Ejercicio1_REPASO.AssemblyInfo.cs
+C:\Users\alumnoinfo\Desktop\MiguelezMiguel_Serv1aEv\Ejercicio1_REPASO\Ejercicio1_REPASO\obj\Debug\net6.0\Ejercicio1_REPASO.csproj.CoreCompileInputs.cache
+C:\Users\alumnoinfo\Desktop\MiguelezMiguel_Serv1aEv\Ejercicio1_REPASO\Ejercicio1_REPASO\obj\Debug\net6.0\Ejercicio1_REPASO.dll
+C:\Users\alumnoinfo\Desktop\MiguelezMiguel_Serv1aEv\Ejercicio1_REPASO\Ejercicio1_REPASO\obj\Debug\net6.0\refint\Ejercicio1_REPASO.dll
+C:\Users\alumnoinfo\Desktop\MiguelezMiguel_Serv1aEv\Ejercicio1_REPASO\Ejercicio1_REPASO\obj\Debug\net6.0\Ejercicio1_REPASO.pdb
+C:\Users\alumnoinfo\Desktop\MiguelezMiguel_Serv1aEv\Ejercicio1_REPASO\Ejercicio1_REPASO\obj\Debug\net6.0\Ejercicio1_REPASO.genruntimeconfig.cache
+C:\Users\alumnoinfo\Desktop\MiguelezMiguel_Serv1aEv\Ejercicio1_REPASO\Ejercicio1_REPASO\obj\Debug\net6.0\ref\Ejercicio1_REPASO.dll
