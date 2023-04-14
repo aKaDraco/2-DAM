@@ -1,0 +1,17 @@
+C:\Users\alumnoinfo\Desktop\Ejercicio 4\Ejercicio 4\bin\Debug\net6.0-windows\Ejercicio 4.exe
+C:\Users\alumnoinfo\Desktop\Ejercicio 4\Ejercicio 4\bin\Debug\net6.0-windows\Ejercicio 4.deps.json
+C:\Users\alumnoinfo\Desktop\Ejercicio 4\Ejercicio 4\bin\Debug\net6.0-windows\Ejercicio 4.runtimeconfig.json
+C:\Users\alumnoinfo\Desktop\Ejercicio 4\Ejercicio 4\bin\Debug\net6.0-windows\Ejercicio 4.dll
+C:\Users\alumnoinfo\Desktop\Ejercicio 4\Ejercicio 4\bin\Debug\net6.0-windows\Ejercicio 4.pdb
+C:\Users\alumnoinfo\Desktop\Ejercicio 4\Ejercicio 4\obj\Debug\net6.0-windows\Ejercicio 4.csproj.AssemblyReference.cache
+C:\Users\alumnoinfo\Desktop\Ejercicio 4\Ejercicio 4\obj\Debug\net6.0-windows\Ejercicio_4.Form1.resources
+C:\Users\alumnoinfo\Desktop\Ejercicio 4\Ejercicio 4\obj\Debug\net6.0-windows\Ejercicio 4.csproj.GenerateResource.cache
+C:\Users\alumnoinfo\Desktop\Ejercicio 4\Ejercicio 4\obj\Debug\net6.0-windows\Ejercicio 4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alumnoinfo\Desktop\Ejercicio 4\Ejercicio 4\obj\Debug\net6.0-windows\Ejercicio 4.AssemblyInfoInputs.cache
+C:\Users\alumnoinfo\Desktop\Ejercicio 4\Ejercicio 4\obj\Debug\net6.0-windows\Ejercicio 4.AssemblyInfo.cs
+C:\Users\alumnoinfo\Desktop\Ejercicio 4\Ejercicio 4\obj\Debug\net6.0-windows\Ejercicio 4.csproj.CoreCompileInputs.cache
+C:\Users\alumnoinfo\Desktop\Ejercicio 4\Ejercicio 4\obj\Debug\net6.0-windows\Ejercicio 4.dll
+C:\Users\alumnoinfo\Desktop\Ejercicio 4\Ejercicio 4\obj\Debug\net6.0-windows\refint\Ejercicio 4.dll
+C:\Users\alumnoinfo\Desktop\Ejercicio 4\Ejercicio 4\obj\Debug\net6.0-windows\Ejercicio 4.pdb
+C:\Users\alumnoinfo\Desktop\Ejercicio 4\Ejercicio 4\obj\Debug\net6.0-windows\Ejercicio 4.genruntimeconfig.cache
+C:\Users\alumnoinfo\Desktop\Ejercicio 4\Ejercicio 4\obj\Debug\net6.0-windows\ref\Ejercicio 4.dll
