@@ -59,7 +59,7 @@ namespace Ejercicio1_REPASO
 
         public override string ToString()
         {
-            return "Nombre: " + getNombre + "\nRadio: " + Radio.ToString("N2");
+            return "Nombre: " + getNombre('_') + "\nRadio: " + Radio.ToString("N2");
         }
     }
 }
