@@ -2,13 +2,12 @@
 {
     internal class Program
     {
+        static List<Astro> astros;
+        static Planeta p;
         static void Main(string[] args)
         {
-            List<Astro> astros = new List<Astro>();
-            int res = 0, lunas = 0;
-            bool gas = false, compRadio = true, compName = true;
-            string auxName, planName, lunaName;
-            double auxRad, planRad, lunaRad;
+            int res = 0;
+            astros = new List<Astro>();
             while (res != 5)
             {
                 Console.WriteLine("--- SELECCIONA UNA OPCION ---\n");
@@ -22,78 +21,10 @@
                     switch (res)
                     {
                         case 1:
-                            Console.WriteLine("ES GASEOSO? S para SI, cualquier otro valor para NO\n");
-                            if (Console.ReadLine().ToLower() == "s")
-                            {
-                                gas = true;
-                            }
-                            else
-                            {
-                                gas = false;
-                            }
-
-                            //TODO REALIZAR COMPROBACIONES DEL RADIO Y EL NOMBRE
-                            while (compName)
-                            {
-                                Console.WriteLine("Introduzca el nombre del planeta:\n");
-                                auxName = Console.ReadLine();
-                                if (auxName == "")
-                                {
-                                    Console.WriteLine("NOMBRE INTRODUCIDO NO VÁLIDO");
-                                }
-                                else
-                                {
-                                    compName = false;
-                                }
-                            }
-
-                            while (compRadio)
-                            {
-                                Console.WriteLine("Introduzca el radio del planeta\n");
-                                if (Double.TryParse(Console.ReadLine(), out planRad) && planRad > 0)
-                                {
-                                    compRadio = false;
-                                    astros.Add(new Planeta(gas, planName, planRad));
-                                }
-                                else
-                                {
-                                    Console.WriteLine("RADIO NO VÁLIDO\n");
-                                }
-                            }
-
-                            Console.WriteLine("Planeta " + planName + " creado.\n");
-
-                            Console.WriteLine("Cuantas lunas tiene el planeta?\n");
-                            lunas = Convert.ToInt32(Console.ReadLine());
-                            for (int i = 0; i < lunas; i++)
-                            {
-                                Console.WriteLine("Introduce el nombre de la Luna " + (i + 1) + ":\n");
-                                lunaName = Console.ReadLine();
-                                Console.WriteLine("Introduce el radio de la Luna " + (i + 1) + ":\n");
-                                lunaRad = Convert.ToDouble(Console.ReadLine());
-                                astros.Add(new Astro(lunaName, lunaRad));
-                                Console.WriteLine("Luna " + lunaName + " creada.\n");
-                            }
-
-                            Console.WriteLine("SE HAN CREADO " + lunas + " LUNAS.\n");
+                            creaPlaneta();
                             break;
                         case 2:
-                            Console.WriteLine("Introduce el nombre:\n");
-                            lunaName = Console.ReadLine();
 
-                            while (compRadio)
-                            {
-                                Console.WriteLine("Introduzca el radio\n");
-                                if (Double.TryParse(Console.ReadLine(), out lunaRad) && lunaRad > 0)
-                                {
-                                    compRadio = false;
-                                    astros.Add(new Astro(lunaName, lunaRad));
-                                }
-                                else
-                                {
-                                    Console.WriteLine("RADIO NO VÁLIDO\n");
-                                }
-                            }
                             break;
                         case 3:
                             if (astros != null && astros.Count > 0)
@@ -149,6 +80,119 @@
                     Console.WriteLine("\nVALOR INTRODUCIDO NO VÁLIDO");
                 }
             }
+        }
+
+        public static void creaPlaneta()
+        {
+            bool gas, compName = true, compRadio = true, compLunas = true;
+            string planName;
+            double planRad;
+            int lunas = 0;
+
+            Console.WriteLine("ES GASEOSO? S para SI, cualquier otro valor para NO\n");
+            if (Console.ReadLine().ToLower() == "s")
+            {
+                gas = true;
+                Console.WriteLine("EL PLANETA ES GASEOSO\n");
+            }
+            else
+            {
+                gas = false;
+                Console.WriteLine("EL PLANETA NO ES GASEOSO\n");
+            }
+
+            while (compName)
+            {
+                Console.WriteLine("Introduzca el nombre del planeta:\n");
+                planName = Console.ReadLine();
+                if (planName == "")
+                {
+                    Console.WriteLine("NOMBRE INTRODUCIDO NO VÁLIDO");
+                }
+                else
+                {
+                    compName = false;
+                    while (compRadio)
+                    {
+                        Console.WriteLine("Introduzca el radio del planeta\n");
+                        if (Double.TryParse(Console.ReadLine(), out planRad) && planRad > 0)
+                        {
+                            compRadio = false;
+                            p = new Planeta(gas, planName, planRad);
+
+                            while (compLunas)
+                            {
+                                Console.WriteLine("Cuantas lunas tiene el planeta?\n");
+                                lunas = Convert.ToInt32(Console.ReadLine());
+                                if (Int32.TryParse(Console.ReadLine(), out lunas) && lunas > 0)
+                                {
+                                    for (int i = 0; i < lunas; i++)
+                                    {
+                                        if (creaLuna())
+                                        {
+                                            Console.WriteLine("LUNA" + (i + 1) + " CREADA\n");
+                                        }
+                                    }
+                                    Console.WriteLine("SE HAN CREADO " + lunas + " LUNAS.\n");
+                                    compLunas = false;
+                                }
+                                else if (lunas == 0)
+                                {
+                                    Console.WriteLine("EL PLANETA NO TIENE LUNAS");
+                                    compLunas = false;
+                                }
+                                else
+                                {
+                                    Console.WriteLine("VALOR NO VÁLIDO\n");
+                                }
+                            }
+
+                        }
+                        else
+                        {
+                            Console.WriteLine("RADIO NO VÁLIDO\n");
+                        }
+                    }
+                }
+            }
+            Console.WriteLine("Planeta " + p.Nombre + " con radio " + p.Radio + " creado.\n");
+            astros.Add(p);
+        }
+
+        public static bool creaLuna()
+        {
+            bool compRadioLuna = true, compNameLuna = true;
+            string lunaName;
+            double lunaRad;
+
+            while (compNameLuna)
+            {
+                Console.WriteLine("Introduce el nombre de la Luna:\n");
+                lunaName = Console.ReadLine();
+                if (lunaName == "")
+                {
+                    Console.WriteLine("NOMBRE INTRODUCIDO NO VÁLIDO");
+                }
+                else
+                {
+                    compNameLuna = false;
+                    while (compRadioLuna)
+                    {
+                        Console.WriteLine("Introduce el radio de la Luna:\n");
+                        if (Double.TryParse(Console.ReadLine(), out lunaRad) && lunaRad > 0)
+                        {
+                            compRadioLuna = false;
+                            astros.Add(new Astro(lunaName, lunaRad));
+                            Console.WriteLine("Luna " + lunaName + " con radio " + lunaRad + " creada.\n");
+                        }
+                        else
+                        {
+                            Console.WriteLine("RADIO NO VÁLIDO\n");
+                        }
+                    }
+                }
+            }
+            return true;
         }
     }
 }
