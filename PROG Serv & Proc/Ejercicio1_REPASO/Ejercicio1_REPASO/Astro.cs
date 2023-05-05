@@ -27,19 +27,24 @@ namespace Ejercicio1_REPASO
             get => radio;
             set => radio = value;
         }
-        public string Nombre { get => nombre; set => nombre = value.ToUpper().Trim(); }
+        public string Nombre
+        {
+
+            get => nombre;
+            set => nombre = value.ToUpper().Trim();
+        }
         public string getNombre(char c)
         {
             string aux = "";
-            for (int i = 0; i < nombre.ToCharArray().Length; i++)
+            for (int i = 0; i < nombre.Length; i++)
             {
-                if (i == nombre.ToCharArray().Length - 1)
+                if (i == nombre.Length - 1)
                 {
-                    aux += nombre.ToCharArray()[i];
+                    aux += nombre[i];
                 }
                 else
                 {
-                    aux += nombre.ToCharArray()[i] + c.ToString();
+                    aux += nombre[i] + c.ToString();
                 }
             }
             return aux;
@@ -47,7 +52,11 @@ namespace Ejercicio1_REPASO
 
         public double setRadio(double value)
         {
-            if (value < 0) throw new RadioNegativoException();
+            if (value < 0)
+            {
+                throw new RadioNegativoException();
+            }
+
             return radio = value;
         }
 
@@ -59,7 +68,7 @@ namespace Ejercicio1_REPASO
 
         public override string ToString()
         {
-            return "Nombre: " + getNombre('_') + "\nRadio: " + Radio.ToString("N2");
+            return "\tNombre: " + getNombre('_') + "\n\tRadio: " + Radio.ToString("N2");
         }
     }
 }

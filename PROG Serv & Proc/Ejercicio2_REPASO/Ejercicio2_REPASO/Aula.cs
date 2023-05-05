@@ -14,16 +14,48 @@ namespace Ejercicio2_REPASO
         private string[] nomAlumnos;
         private string[] nomAsignaturas;
 
+        public int[,] Notas
+        {
+            set => notas = value;
+            get => notas;
+        }
+        public string[] NomAlumnos
+        {
+            get => nomAlumnos;
+        }
+        public string[] NomAsignaturas
+        {
+            get => nomAsignaturas;
+        }
+
+        public Aula(string[] alumnos, string[] asignaturas)
+        {
+            Random r = new Random();
+            int[,] notas = new int[alumnos.Length, asignaturas.Length];
+
+            for (int i = 0; i < notas.GetLength(0); i++)
+            {
+                for (int j = 0; j < notas.GetLength(1); j++)
+                {
+                    notas[i, j] = r.Next(3, 11);
+                }
+            }
+
+            this.notas = notas;
+            this.nomAlumnos = alumnos;
+            this.nomAsignaturas = asignaturas;
+        }
+
         public void maxMin(ref int maX, ref int miN)
         {
             if (notas != null)
             {
+                maX = 3;
+                miN = 11;
                 for (int i = 0; i < notas.GetLength(0); i++)
                 {
                     for (int j = 0; j < notas.GetLength(1); j++)
                     {
-                        maX = notas[i, j];
-                        miN = notas[i, j];
                         if (notas[i, j] > maX)
                         {
                             maX = notas[i, j];
@@ -36,41 +68,66 @@ namespace Ejercicio2_REPASO
                     }
                 }
             }
-        }
-
-        public Aula(string[] nomAlumnos, string[] nomAsignaturas)
-        {
-            Random rand = new Random();
-            int[,] tabla = new int[nomAlumnos.Length, nomAsignaturas.Length];
-            for (int i = 0; i < tabla.GetLength(0); i++)
+            else
             {
-                for (int j = 0; j < tabla.GetLength(1); j++)
-                {
-                    tabla[i, j] = rand.Next(1, 11);
-                }
+                Console.WriteLine("LA TABLA DE NOTAS ESTA VACIA");
             }
         }
 
-        //TODO NOTAS DE CADA ALUMNO
+
         public Hashtable aprobados()
         {
             Hashtable aprobados = new Hashtable();
-            for (int i = 0; i < nomAlumnos.Length; i++)
+            int[] notasAprobadas = new int[4];
+            string alumno;
+            bool compAprobado;
+
+            for (int i = 0; i < notas.GetLength(0); i++)
             {
+                compAprobado = true;
+                alumno = notas[i].ToString();
+                for (int j = 0; j < notas.GetLength(1); j++)
+                {
+                    if (notas[i, j] < 5)
+                    {
+                        compAprobado = false;
+                    }
+                    else
+                    {
+                        notasAprobadas[j] = notas[i, j];
 
-                // comprobar notas >=5 del alumno i
-
-                // crear vector con notas (si procede)
-
-
-                aprobados.Add(nomAlumnos[i],vectoir]);
+                    }
+                }
+                if (compAprobado)
+                {
+                    aprobados.Add();
+                }
             }
+
             return aprobados;
         }
 
-        public double media()
+        public double mediaAlumno(int alumno)
         {
-            
+            double media = 0;
+
+            for (int i = 0; i < notas.GetLength(0); i++)
+            {
+                media += notas[alumno, i];
+            }
+            return media / notas.GetLength(0);
+        }
+
+        public double mediaAsignatura(int asigantura)
+        {
+            double media = 0;
+
+            for (int i = 0; i < notas.GetLength(1); i++)
+            {
+                media += notas[i, asigantura];
+            }
+            return media / notas.GetLength(1);
         }
     }
 }
+
