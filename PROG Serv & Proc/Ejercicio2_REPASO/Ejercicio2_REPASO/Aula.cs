@@ -57,7 +57,13 @@ namespace Ejercicio2_REPASO
             Hashtable aprobados = new Hashtable();
             for (int i = 0; i < nomAlumnos.Length; i++)
             {
-                aprobados.Add(nomAlumnos.ElementAt(i),);
+
+                // comprobar notas >=5 del alumno i
+
+                // crear vector con notas (si procede)
+
+
+                aprobados.Add(nomAlumnos[i],vectoir]);
             }
             return aprobados;
         }
