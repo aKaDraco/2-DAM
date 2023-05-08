@@ -10,7 +10,11 @@ namespace Ejercicio1_REPASO
     {
         private bool gaseoso;
 
-        public bool Gaseoso { get => gaseoso; set => gaseoso = value; }
+        public bool Gaseoso
+        {
+            get => gaseoso;
+            set => gaseoso = value;
+        }
 
         public List<Astro> satelites;
 

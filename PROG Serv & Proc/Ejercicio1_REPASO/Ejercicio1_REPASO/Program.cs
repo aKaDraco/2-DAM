@@ -139,7 +139,7 @@
                                     {
                                         if (creaLuna(p))
                                         {
-                                            Console.WriteLine("LUNA" + (i + 1) + " CREADA\n");
+                                            Console.WriteLine("LUNA " + (i + 1) + " CREADA\n");
                                         }
                                     }
                                     Console.WriteLine("SE HAN CREADO " + lunas + " LUNAS.\n");
