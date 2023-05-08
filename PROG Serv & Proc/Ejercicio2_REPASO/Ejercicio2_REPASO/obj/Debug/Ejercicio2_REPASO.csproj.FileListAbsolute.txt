@@ -1,0 +1,8 @@
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\Ejercicio2_REPASO\Ejercicio2_REPASO\bin\Debug\Ejercicio2_REPASO.exe.config
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\Ejercicio2_REPASO\Ejercicio2_REPASO\bin\Debug\Ejercicio2_REPASO.exe
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\Ejercicio2_REPASO\Ejercicio2_REPASO\bin\Debug\Ejercicio2_REPASO.pdb
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\Ejercicio2_REPASO\Ejercicio2_REPASO\obj\Debug\Ejercicio2_REPASO.csproj.AssemblyReference.cache
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\Ejercicio2_REPASO\Ejercicio2_REPASO\obj\Debug\Ejercicio2_REPASO.csproj.SuggestedBindingRedirects.cache
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\Ejercicio2_REPASO\Ejercicio2_REPASO\obj\Debug\Ejercicio2_REPASO.csproj.CoreCompileInputs.cache
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\Ejercicio2_REPASO\Ejercicio2_REPASO\obj\Debug\Ejercicio2_REPASO.exe
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\Ejercicio2_REPASO\Ejercicio2_REPASO\obj\Debug\Ejercicio2_REPASO.pdb

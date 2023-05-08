@@ -78,14 +78,12 @@ namespace Ejercicio2_REPASO
         public Hashtable aprobados()
         {
             Hashtable aprobados = new Hashtable();
-            int[] notasAprobadas = new int[4];
-            string alumno;
+            int[] notasAprobadas = new int[nomAsignaturas.Length];
             bool compAprobado;
 
             for (int i = 0; i < notas.GetLength(0); i++)
             {
                 compAprobado = true;
-                alumno = notas[i].ToString();
                 for (int j = 0; j < notas.GetLength(1); j++)
                 {
                     if (notas[i, j] < 5)
@@ -100,7 +98,11 @@ namespace Ejercicio2_REPASO
                 }
                 if (compAprobado)
                 {
-                    aprobados.Add();
+                    aprobados.Add(nomAlumnos[i], notasAprobadas);
+                }
+                else
+                {
+                    notasAprobadas = new int[4];
                 }
             }
 
@@ -127,6 +129,20 @@ namespace Ejercicio2_REPASO
                 media += notas[i, asigantura];
             }
             return media / notas.GetLength(1);
+        }
+
+        public double mediaNotas()
+        {
+            double media = 0;
+
+            for (int i = 0; i < notas.GetLength(0); i++)
+            {
+                for (int j = 0; j < notas.GetLength(1); j++)
+                {
+                    media += notas[i, j];
+                }
+            }
+            return media / (notas.GetLength(0) * notas.GetLength(1));
         }
     }
 }
