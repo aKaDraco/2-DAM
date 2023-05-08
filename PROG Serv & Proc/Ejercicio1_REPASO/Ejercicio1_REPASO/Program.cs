@@ -24,9 +24,13 @@
                             creaPlaneta();
                             break;
                         case 2:
-
+                            if (creaAstro())
+                            {
+                                Console.WriteLine("SE HA AÑADIDO UN NUEVO ASTRO");
+                            }
                             break;
                         case 3:
+                            Planeta pla;
                             if (astros != null && astros.Count > 0)
                             {
                                 for (int i = 0; i < astros.Count; i++)
@@ -38,6 +42,12 @@
                                     else
                                     {
                                         Console.WriteLine(astros.ElementAt(i).getNombre('.'));
+                                        pla = (Planeta)astros[i];
+
+                                        for (int j = 0; j < pla.satelites.Count; j++)
+                                        {
+                                            Console.WriteLine("\t" + pla.satelites[j].ToString());
+                                        }
                                     }
                                 }
                             }
@@ -49,17 +59,17 @@
                         case 4:
                             if (astros != null && astros.Count > 0)
                             {
-                                for (int i = astros.Count; i >= 0; i--)
+                                for (int i = 0; i < astros.Count; i--)
                                 {
-                                    for (int j = astros.Count; j >= 0; j--)
+                                    for (int j = astros.Count - 1; j > i; j--)
                                     {
                                         if (astros[i].Equals(astros[j]))
                                         {
-                                            Console.WriteLine("ASTRO " + astros.ElementAt(j).Nombre + " ESTABA REPETIDO");
                                             astros.RemoveAt(j);
                                         }
                                     }
                                 }
+                                Console.WriteLine("PLANETAS Y ASTROS REPETIDOS ELIMINADOS");
                             }
                             else
                             {
@@ -87,7 +97,7 @@
             bool gas, compName = true, compRadio = true, compLunas = true;
             string planName;
             double planRad;
-            int lunas = 0;
+            int lunas;
 
             Console.WriteLine("ES GASEOSO? S para SI, cualquier otro valor para NO\n");
             if (Console.ReadLine().ToLower() == "s")
@@ -123,12 +133,11 @@
                             while (compLunas)
                             {
                                 Console.WriteLine("Cuantas lunas tiene el planeta?\n");
-                                lunas = Convert.ToInt32(Console.ReadLine());
                                 if (Int32.TryParse(Console.ReadLine(), out lunas) && lunas > 0)
                                 {
                                     for (int i = 0; i < lunas; i++)
                                     {
-                                        if (creaLuna())
+                                        if (creaLuna(p))
                                         {
                                             Console.WriteLine("LUNA" + (i + 1) + " CREADA\n");
                                         }
@@ -159,7 +168,7 @@
             astros.Add(p);
         }
 
-        public static bool creaLuna()
+        public static bool creaLuna(Planeta p)
         {
             bool compRadioLuna = true, compNameLuna = true;
             string lunaName;
@@ -182,8 +191,42 @@
                         if (Double.TryParse(Console.ReadLine(), out lunaRad) && lunaRad > 0)
                         {
                             compRadioLuna = false;
+                            p.satelites.Add(new Astro(lunaName, lunaRad));
+                        }
+                        else
+                        {
+                            Console.WriteLine("RADIO NO VÁLIDO\n");
+                        }
+                    }
+                }
+            }
+            return true;
+        }
+
+        public static bool creaAstro()
+        {
+            bool compRadioLuna = true, compNameLuna = true;
+            string lunaName;
+            double lunaRad;
+
+            while (compNameLuna)
+            {
+                Console.WriteLine("Introduce el nombre del Astro:\n");
+                lunaName = Console.ReadLine();
+                if (lunaName == "")
+                {
+                    Console.WriteLine("NOMBRE INTRODUCIDO NO VÁLIDO");
+                }
+                else
+                {
+                    compNameLuna = false;
+                    while (compRadioLuna)
+                    {
+                        Console.WriteLine("Introduce el radio del Astro:\n");
+                        if (Double.TryParse(Console.ReadLine(), out lunaRad) && lunaRad > 0)
+                        {
+                            compRadioLuna = false;
                             astros.Add(new Astro(lunaName, lunaRad));
-                            Console.WriteLine("Luna " + lunaName + " con radio " + lunaRad + " creada.\n");
                         }
                         else
                         {
