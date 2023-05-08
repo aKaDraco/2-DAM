@@ -46,7 +46,7 @@
 
                                         for (int j = 0; j < pla.satelites.Count; j++)
                                         {
-                                            Console.WriteLine("\t" + pla.satelites[j].ToString());
+                                            Console.WriteLine(pla.satelites[j].ToString());
                                         }
                                     }
                                 }
@@ -59,7 +59,7 @@
                         case 4:
                             if (astros != null && astros.Count > 0)
                             {
-                                for (int i = 0; i < astros.Count; i--)
+                                for (int i = 0; i < astros.Count; i++)
                                 {
                                     for (int j = astros.Count - 1; j > i; j--)
                                     {
