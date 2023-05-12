@@ -12,7 +12,7 @@ namespace Ejercicio2_REPASO
         static string[] nomAsig = { "MATEMATICAS", "LENGUA", "HISTORIA", "GALLEGO" };
         Aula aula = new Aula(nomAlum, nomAsig);
         bool comp;
-        int num = 0;
+        int num = 0, max = 0, min = 0;
         public void init()
         {
             int res = 0;
@@ -34,45 +34,41 @@ namespace Ejercicio2_REPASO
                     switch (res)
                     {
                         case 1:
-                            for (int i = 0; i < aula.Notas.GetLength(0); i++)
-                            {
-                                for (int j = 0; j < aula.Notas.GetLength(1); j++)
-                                {
-                                    Console.Write(aula.Notas[i, j] + " ");
-                                }
-                                Console.WriteLine();
-                            }
+                            aula.mostrarTabla();
                             break;
                         case 2:
                             Console.WriteLine("LA MEDIA DE TODAS LAS NOTAS ES: " + aula.mediaNotas());
                             break;
                         case 3:
                             compAlumno();
-                            Console.WriteLine("LA MEDIA DEL ALUMNO " + num + " ES: " + aula.mediaAlumno(num));
+                            Console.WriteLine("LA MEDIA DE" + nomAlum[num - 1] + " ES: " + aula.mediaAlumno(num));
                             break;
                         case 4:
                             compAsignatura();
-                            Console.WriteLine("LA MEDIA DE LA ASIGNATURA " + num + " ES: " + aula.mediaAsignatura(num));
+                            Console.WriteLine("LA MEDIA DE " + nomAsig[num - 1] + " ES: " + aula.mediaAsignatura(num));
                             break;
                         case 5:
                             compAlumno();
-                            Console.WriteLine("LAS NOTAS DEL ALUMNO " + num + " SON:");
+                            Console.Write("LAS NOTAS DE " + nomAlum[num - 1] + " SON:");
                             for (int i = 0; i < aula.Notas.GetLength(1); i++)
                             {
-                                Console.Write(aula.Notas[num, i] + " ");
+                                Console.Write($"{aula.Notas[num - 1, i],3}");
                             }
                             Console.WriteLine();
                             break;
                         case 6:
                             compAsignatura();
-                            Console.WriteLine("LAS NOTAS DE LA ASIGNATURA " + num + " SON:");
+                            Console.Write("LAS NOTAS DE " + nomAsig[num - 1] + " SON:");
                             for (int i = 0; i < aula.Notas.GetLength(0); i++)
                             {
-                                Console.Write(aula.Notas[i, num] + " ");
+                                Console.Write($"{aula.Notas[i, num - 1],3}");
                             }
                             Console.WriteLine();
                             break;
                         case 7:
+                            compAlumno();
+                            aula.maxMin(ref max, ref min, num);
+                            Console.WriteLine("LA NOTA MÁS ALTA DE " + nomAlum[num - 1] + " ES " + max + " Y LA MÍNIMA " + min);
                             break;
                         case 8:
                             break;

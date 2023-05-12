@@ -46,26 +46,25 @@ namespace Ejercicio2_REPASO
             this.nomAsignaturas = asignaturas;
         }
 
-        public void maxMin(ref int maX, ref int miN)
+        public void maxMin(ref int maX, ref int miN, int alumno)
         {
             if (notas != null)
             {
-                maX = 3;
-                miN = 11;
-                for (int i = 0; i < notas.GetLength(0); i++)
-                {
-                    for (int j = 0; j < notas.GetLength(1); j++)
-                    {
-                        if (notas[i, j] > maX)
-                        {
-                            maX = notas[i, j];
-                        }
+                maX = notas[alumno - 1, 0];
+                miN = notas[alumno - 1, 0];
 
-                        if (notas[i, j] < miN)
-                        {
-                            miN = notas[i, j];
-                        }
+                for (int i = 0; i < notas.GetLength(1); i++)
+                {
+                    if (notas[alumno - 1, i] > maX)
+                    {
+                        maX = notas[alumno - 1, i];
                     }
+
+                    if (notas[alumno - 1, i] < miN)
+                    {
+                        miN = notas[alumno - 1, i];
+                    }
+
                 }
             }
             else
@@ -113,22 +112,22 @@ namespace Ejercicio2_REPASO
         {
             double media = 0;
 
-            for (int i = 0; i < notas.GetLength(0); i++)
+            for (int i = 0; i < notas.GetLength(1); i++)
             {
-                media += notas[alumno, i];
+                media += notas[alumno - 1, i];
             }
-            return media / notas.GetLength(0);
+            return media / nomAsignaturas.Length;
         }
 
         public double mediaAsignatura(int asigantura)
         {
             double media = 0;
 
-            for (int i = 0; i < notas.GetLength(1); i++)
+            for (int i = 0; i < notas.GetLength(0); i++)
             {
-                media += notas[i, asigantura];
+                media += notas[i, asigantura - 1];
             }
-            return media / notas.GetLength(1);
+            return media / nomAlumnos.Length;
         }
 
         public double mediaNotas()
@@ -142,7 +141,26 @@ namespace Ejercicio2_REPASO
                     media += notas[i, j];
                 }
             }
-            return media / (notas.GetLength(0) * notas.GetLength(1));
+            return media / (nomAlumnos.Length * nomAsignaturas.Length);
+        }
+
+        public void mostrarTabla()
+        {
+            Console.Write($"{"",13}");
+            for (int i = 0; i < nomAsignaturas.Length; i++)
+            {
+                Console.Write($"{nomAsignaturas[i],10}");
+            }
+            Console.WriteLine();
+            for (int i = 0; i < notas.GetLength(0); i++)
+            {
+                Console.Write($"{i + 1}- {nomAlumnos[i],-10}");
+                for (int j = 0; j < notas.GetLength(1); j++)
+                {
+                    Console.Write($"{notas[i, j],10}");
+                }
+                Console.WriteLine();
+            }
         }
     }
 }
