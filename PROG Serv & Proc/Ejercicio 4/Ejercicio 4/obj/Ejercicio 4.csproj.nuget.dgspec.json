@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alumnoinfo\\Desktop\\Ejercicio 4\\Ejercicio 4\\Ejercicio 4.csproj": {}
+    "C:\\Users\\Hugo\\OneDrive\\Documentos\\DAM GitHub\\2-DAM\\PROG Serv & Proc\\Ejercicio 4\\Ejercicio 4\\Ejercicio 4.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alumnoinfo\\Desktop\\Ejercicio 4\\Ejercicio 4\\Ejercicio 4.csproj": {
+    "C:\\Users\\Hugo\\OneDrive\\Documentos\\DAM GitHub\\2-DAM\\PROG Serv & Proc\\Ejercicio 4\\Ejercicio 4\\Ejercicio 4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alumnoinfo\\Desktop\\Ejercicio 4\\Ejercicio 4\\Ejercicio 4.csproj",
+        "projectUniqueName": "C:\\Users\\Hugo\\OneDrive\\Documentos\\DAM GitHub\\2-DAM\\PROG Serv & Proc\\Ejercicio 4\\Ejercicio 4\\Ejercicio 4.csproj",
         "projectName": "Ejercicio 4",
-        "projectPath": "C:\\Users\\alumnoinfo\\Desktop\\Ejercicio 4\\Ejercicio 4\\Ejercicio 4.csproj",
-        "packagesPath": "C:\\Users\\alumnoinfo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alumnoinfo\\Desktop\\Ejercicio 4\\Ejercicio 4\\obj\\",
+        "projectPath": "C:\\Users\\Hugo\\OneDrive\\Documentos\\DAM GitHub\\2-DAM\\PROG Serv & Proc\\Ejercicio 4\\Ejercicio 4\\Ejercicio 4.csproj",
+        "packagesPath": "C:\\Users\\Hugo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Hugo\\OneDrive\\Documentos\\DAM GitHub\\2-DAM\\PROG Serv & Proc\\Ejercicio 4\\Ejercicio 4\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\alumnoinfo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hugo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
