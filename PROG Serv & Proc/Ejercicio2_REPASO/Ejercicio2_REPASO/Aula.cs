@@ -48,35 +48,30 @@ namespace Ejercicio2_REPASO
 
         public void maxMin(ref int maX, ref int miN, int alumno)
         {
-            if (notas != null)
-            {
-                maX = notas[alumno - 1, 0];
-                miN = notas[alumno - 1, 0];
 
-                for (int i = 0; i < notas.GetLength(1); i++)
+            maX = notas[alumno - 1, 0];
+            miN = notas[alumno - 1, 0];
+
+            for (int i = 0; i < notas.GetLength(1); i++)
+            {
+                if (notas[alumno - 1, i] > maX)
                 {
-                    if (notas[alumno - 1, i] > maX)
-                    {
-                        maX = notas[alumno - 1, i];
-                    }
-
-                    if (notas[alumno - 1, i] < miN)
-                    {
-                        miN = notas[alumno - 1, i];
-                    }
-
+                    maX = notas[alumno - 1, i];
                 }
+
+                if (notas[alumno - 1, i] < miN)
+                {
+                    miN = notas[alumno - 1, i];
+                }
+
             }
-            else
-            {
-                Console.WriteLine("LA TABLA DE NOTAS ESTA VACIA");
-            }
+
         }
 
 
         public Hashtable aprobados()
         {
-            Hashtable aprobados = new Hashtable();
+            Hashtable hAprobados = new Hashtable();
             int[] notasAprobadas = new int[nomAsignaturas.Length];
             bool compAprobado;
 
@@ -97,15 +92,12 @@ namespace Ejercicio2_REPASO
                 }
                 if (compAprobado)
                 {
-                    aprobados.Add(nomAlumnos[i], notasAprobadas);
+                    hAprobados.Add(nomAlumnos[i], notasAprobadas);
                 }
-                else
-                {
-                    notasAprobadas = new int[4];
-                }
+                notasAprobadas = new int[4];
             }
 
-            return aprobados;
+            return hAprobados;
         }
 
         public double mediaAlumno(int alumno)
@@ -142,25 +134,6 @@ namespace Ejercicio2_REPASO
                 }
             }
             return media / (nomAlumnos.Length * nomAsignaturas.Length);
-        }
-
-        public void mostrarTabla()
-        {
-            Console.Write($"{"",13}");
-            for (int i = 0; i < nomAsignaturas.Length; i++)
-            {
-                Console.Write($"{nomAsignaturas[i],10}");
-            }
-            Console.WriteLine();
-            for (int i = 0; i < notas.GetLength(0); i++)
-            {
-                Console.Write($"{i + 1}- {nomAlumnos[i],-10}");
-                for (int j = 0; j < notas.GetLength(1); j++)
-                {
-                    Console.Write($"{notas[i, j],10}");
-                }
-                Console.WriteLine();
-            }
         }
     }
 }

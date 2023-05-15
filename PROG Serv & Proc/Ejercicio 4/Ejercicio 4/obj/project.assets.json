@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Hugo\\.nuget\\packages\\": {}
+    "C:\\Users\\alumnoinfo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hugo\\OneDrive\\Documentos\\DAM GitHub\\2-DAM\\PROG Serv & Proc\\Ejercicio 4\\Ejercicio 4\\Ejercicio 4.csproj",
+      "projectUniqueName": "C:\\Users\\alumnoinfo\\Desktop\\BORRAR\\2-DAM-main\\PROG Serv & Proc\\Ejercicio 4\\Ejercicio 4\\Ejercicio 4.csproj",
       "projectName": "Ejercicio 4",
-      "projectPath": "C:\\Users\\Hugo\\OneDrive\\Documentos\\DAM GitHub\\2-DAM\\PROG Serv & Proc\\Ejercicio 4\\Ejercicio 4\\Ejercicio 4.csproj",
-      "packagesPath": "C:\\Users\\Hugo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hugo\\OneDrive\\Documentos\\DAM GitHub\\2-DAM\\PROG Serv & Proc\\Ejercicio 4\\Ejercicio 4\\obj\\",
+      "projectPath": "C:\\Users\\alumnoinfo\\Desktop\\BORRAR\\2-DAM-main\\PROG Serv & Proc\\Ejercicio 4\\Ejercicio 4\\Ejercicio 4.csproj",
+      "packagesPath": "C:\\Users\\alumnoinfo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alumnoinfo\\Desktop\\BORRAR\\2-DAM-main\\PROG Serv & Proc\\Ejercicio 4\\Ejercicio 4\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Hugo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alumnoinfo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

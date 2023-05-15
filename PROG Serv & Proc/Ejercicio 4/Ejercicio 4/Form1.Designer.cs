@@ -28,108 +28,108 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtINFO = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.btnVP = new System.Windows.Forms.Button();
-            this.buttonPI = new System.Windows.Forms.Button();
-            this.buttonCP = new System.Windows.Forms.Button();
-            this.buttonKP = new System.Windows.Forms.Button();
-            this.buttonSW = new System.Windows.Forms.Button();
-            this.buttonRP = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            txtINFO = new TextBox();
+            textBox2 = new TextBox();
+            btnVP = new Button();
+            buttonPI = new Button();
+            buttonCP = new Button();
+            buttonKP = new Button();
+            buttonSW = new Button();
+            buttonRP = new Button();
+            SuspendLayout();
             // 
             // txtINFO
             // 
-            this.txtINFO.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtINFO.Location = new System.Drawing.Point(12, 70);
-            this.txtINFO.Multiline = true;
-            this.txtINFO.Name = "txtINFO";
-            this.txtINFO.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtINFO.Size = new System.Drawing.Size(564, 219);
-            this.txtINFO.TabIndex = 0;
+            txtINFO.Font = new Font("Courier New", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txtINFO.Location = new Point(12, 70);
+            txtINFO.Multiline = true;
+            txtINFO.Name = "txtINFO";
+            txtINFO.ScrollBars = ScrollBars.Vertical;
+            txtINFO.Size = new Size(564, 219);
+            txtINFO.TabIndex = 0;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 12);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(564, 23);
-            this.textBox2.TabIndex = 1;
+            textBox2.Location = new Point(12, 12);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(564, 23);
+            textBox2.TabIndex = 1;
+            textBox2.Enter += textBox2_Enter;
             // 
             // btnVP
             // 
-            this.btnVP.Location = new System.Drawing.Point(12, 41);
-            this.btnVP.Name = "btnVP";
-            this.btnVP.Size = new System.Drawing.Size(97, 23);
-            this.btnVP.TabIndex = 2;
-            this.btnVP.Text = "View Processes";
-            this.btnVP.UseVisualStyleBackColor = true;
-            this.btnVP.Click += new System.EventHandler(this.btnVP_Click);
+            btnVP.Location = new Point(12, 41);
+            btnVP.Name = "btnVP";
+            btnVP.Size = new Size(97, 23);
+            btnVP.TabIndex = 2;
+            btnVP.Text = "View Processes";
+            btnVP.UseVisualStyleBackColor = true;
+            btnVP.Click += btnVP_Click;
             // 
             // buttonPI
             // 
-            this.buttonPI.Location = new System.Drawing.Point(115, 41);
-            this.buttonPI.Name = "buttonPI";
-            this.buttonPI.Size = new System.Drawing.Size(83, 23);
-            this.buttonPI.TabIndex = 3;
-            this.buttonPI.Text = "Process Info";
-            this.buttonPI.UseVisualStyleBackColor = true;
-            this.buttonPI.Click += new System.EventHandler(this.buttonPI_Click);
+            buttonPI.Location = new Point(115, 41);
+            buttonPI.Name = "buttonPI";
+            buttonPI.Size = new Size(83, 23);
+            buttonPI.TabIndex = 3;
+            buttonPI.Text = "Process Info";
+            buttonPI.UseVisualStyleBackColor = true;
+            buttonPI.Click += buttonPI_Click;
             // 
             // buttonCP
             // 
-            this.buttonCP.Location = new System.Drawing.Point(204, 41);
-            this.buttonCP.Name = "buttonCP";
-            this.buttonCP.Size = new System.Drawing.Size(97, 23);
-            this.buttonCP.TabIndex = 4;
-            this.buttonCP.Text = "Close Process";
-            this.buttonCP.UseVisualStyleBackColor = true;
+            buttonCP.Location = new Point(204, 41);
+            buttonCP.Name = "buttonCP";
+            buttonCP.Size = new Size(97, 23);
+            buttonCP.TabIndex = 4;
+            buttonCP.Text = "Close Process";
+            buttonCP.UseVisualStyleBackColor = true;
             // 
             // buttonKP
             // 
-            this.buttonKP.Location = new System.Drawing.Point(307, 41);
-            this.buttonKP.Name = "buttonKP";
-            this.buttonKP.Size = new System.Drawing.Size(95, 23);
-            this.buttonKP.TabIndex = 5;
-            this.buttonKP.Text = "Kill Process";
-            this.buttonKP.UseVisualStyleBackColor = true;
+            buttonKP.Location = new Point(307, 41);
+            buttonKP.Name = "buttonKP";
+            buttonKP.Size = new Size(95, 23);
+            buttonKP.TabIndex = 5;
+            buttonKP.Text = "Kill Process";
+            buttonKP.UseVisualStyleBackColor = true;
             // 
             // buttonSW
             // 
-            this.buttonSW.Location = new System.Drawing.Point(497, 41);
-            this.buttonSW.Name = "buttonSW";
-            this.buttonSW.Size = new System.Drawing.Size(79, 23);
-            this.buttonSW.TabIndex = 6;
-            this.buttonSW.Text = "Start With";
-            this.buttonSW.UseVisualStyleBackColor = true;
+            buttonSW.Location = new Point(497, 41);
+            buttonSW.Name = "buttonSW";
+            buttonSW.Size = new Size(79, 23);
+            buttonSW.TabIndex = 6;
+            buttonSW.Text = "Start With";
+            buttonSW.UseVisualStyleBackColor = true;
             // 
             // buttonRP
             // 
-            this.buttonRP.Location = new System.Drawing.Point(408, 41);
-            this.buttonRP.Name = "buttonRP";
-            this.buttonRP.Size = new System.Drawing.Size(83, 23);
-            this.buttonRP.TabIndex = 7;
-            this.buttonRP.Text = "Run App";
-            this.buttonRP.UseVisualStyleBackColor = true;
-            this.buttonRP.Click += new System.EventHandler(this.buttonRP_Click);
+            buttonRP.Location = new Point(408, 41);
+            buttonRP.Name = "buttonRP";
+            buttonRP.Size = new Size(83, 23);
+            buttonRP.TabIndex = 7;
+            buttonRP.Text = "Run App";
+            buttonRP.UseVisualStyleBackColor = true;
+            buttonRP.Click += buttonRP_Click;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(588, 302);
-            this.Controls.Add(this.buttonRP);
-            this.Controls.Add(this.buttonSW);
-            this.Controls.Add(this.buttonKP);
-            this.Controls.Add(this.buttonCP);
-            this.Controls.Add(this.buttonPI);
-            this.Controls.Add(this.btnVP);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.txtINFO);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(588, 302);
+            Controls.Add(buttonRP);
+            Controls.Add(buttonSW);
+            Controls.Add(buttonKP);
+            Controls.Add(buttonCP);
+            Controls.Add(buttonPI);
+            Controls.Add(btnVP);
+            Controls.Add(textBox2);
+            Controls.Add(txtINFO);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
