@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Security.Cryptography;
 
@@ -14,10 +15,17 @@ namespace Ejercicio_4
             h = textBox2.BackColor;
         }
 
-
+        /*
+         Ver procesos actualizados
+        kill
+        Tamaño form
+        getprocessbyid
+         
+         */
         private void btnVP_Click(object sender, EventArgs e)
         {
             txtINFO.Text = "";
+            processes = Process.GetProcesses();
             Array.ForEach(processes, p =>
             {
                 if (p.ProcessName.Length > 10)
@@ -57,23 +65,18 @@ namespace Ejercicio_4
         {
             if (compPID())
             {
-                Array.ForEach(processes, p =>
+                Process p = Process.GetProcessById(pid);
+                txtINFO.AppendText($"PID: {p.Id}\r\nName: {p.ProcessName}\r\nWindow name: {p.MainWindowTitle}\r\n");
+                for (int i = 0; i < p.Threads.Count; i++)
                 {
-                    if (p.Id == pid)
+                    try
                     {
-                        txtINFO.AppendText($"PID: {p.Id}\r\nName: {p.ProcessName}\r\nWindow name: {p.MainWindowTitle}\r\n");
-                        for (int i = 0; i < p.Threads.Count; i++)
-                        {
-                            try
-                            {
-                                txtINFO.AppendText($"Subproceso {i}:\r\nID: {p.Threads[i].Id}\r\nStart time: {p.Threads[i].StartTime}\r\n");
-                            }
-                            catch (ThreadAbortException)
-                            {
-                            }
-                        }
+                        txtINFO.AppendText($"Subproceso {i}:\r\nID: {p.Threads[i].Id}\r\nStart time: {p.Threads[i].StartTime}\r\n");
                     }
-                });
+                    catch (Exception)
+                    {
+                    }
+                }
             }
         }
 
@@ -83,23 +86,6 @@ namespace Ejercicio_4
             textBox2.ForeColor = Color.Black;
         }
 
-        /*
-         * TODO
-         * PREGUNTAR COMO ESPERAR A CERRAR UN PROCESO
-         */
-        private void buttonCP_Click(object sender, EventArgs e)
-        {
-            if (compPID())
-            {
-                Array.ForEach(processes, p =>
-                {
-                    if (p.Id == pid)
-                    {
-                        p.WaitForExit();
-                    }
-                });
-            }
-        }
 
         public bool compPID()
         {
@@ -122,32 +108,67 @@ namespace Ejercicio_4
                 return false;
             }
         }
+        private void buttonCP_Click(object sender, EventArgs e)
+        {
+            if (compPID())
+            {
+                try
+                {
+                    Process p = Process.GetProcessById(pid);
+                    p.CloseMainWindow();
+                }
+                catch (ArgumentException)
+                {
+                    txtINFO.Text = "NO SE HA ENCONTRADO EL PROCESO";
+                }
+            }
+        }
 
         private void buttonKP_Click(object sender, EventArgs e)
         {
             if (compPID())
             {
-                Array.ForEach(processes, p =>
+                try
                 {
-                    if (p.Id == pid)
-                    {
-                        p.Kill();
-                    }
-                });
+                    Process p = Process.GetProcessById(pid);
+                    p.Kill();
+                }
+                catch (Win32Exception)
+                {
+                    txtINFO.Text = "NO SE PUEDE CERRAR EL PROGRAMA";
+                }
+                catch (ArgumentException)
+                {
+                    txtINFO.Text = "NO SE HA ENCONTRADO EL PROGRAMA";
+                }
+
             }
         }
 
         private void buttonRP_Click(object sender, EventArgs e)
         {
-            /*
-            *TODO
-            * PREGUNTAR COMO HACER ESTE BOTON
-            */
+            txtINFO.Text = "";
 
+            if (textBox2.Text != String.Empty)
+            {
+                try
+                {
+                    Process.Start(textBox2.Text);
+                }
+                catch (Win32Exception)
+                {
+                    txtINFO.Text = "NINGUNA APLICACIÓN INICIADA";
+                }
+            }
+            else
+            {
+                textBox2.BackColor = Color.Red;
+            }
         }
         private void buttonSW_Click(object sender, EventArgs e)
         {
             txtINFO.Text = "";
+            processes = Process.GetProcesses();
 
             if (textBox2.Text != String.Empty)
             {
@@ -156,6 +177,10 @@ namespace Ejercicio_4
                     if (p.ProcessName.StartsWith(textBox2.Text))
                     {
                         txtINFO.AppendText($"Name: {p.ProcessName}\r\nPID: {p.Id}\r\n");
+                    }
+                    else
+                    {
+                        txtINFO.Text = "NINGÚN PROGRAMA EMPIEZA POR ESA CADENA";
                     }
                 });
             }

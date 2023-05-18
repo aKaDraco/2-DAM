@@ -131,6 +131,7 @@
             Controls.Add(btnVP);
             Controls.Add(textBox2);
             Controls.Add(txtINFO);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Text = "Procesos";
