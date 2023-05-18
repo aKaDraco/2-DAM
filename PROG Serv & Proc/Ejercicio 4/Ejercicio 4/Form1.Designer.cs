@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             txtINFO = new TextBox();
             textBox2 = new TextBox();
             btnVP = new Button();
@@ -44,6 +45,7 @@
             txtINFO.Location = new Point(12, 70);
             txtINFO.Multiline = true;
             txtINFO.Name = "txtINFO";
+            txtINFO.ReadOnly = true;
             txtINFO.ScrollBars = ScrollBars.Vertical;
             txtINFO.Size = new Size(564, 219);
             txtINFO.TabIndex = 0;
@@ -84,6 +86,7 @@
             buttonCP.TabIndex = 4;
             buttonCP.Text = "Close Process";
             buttonCP.UseVisualStyleBackColor = true;
+            buttonCP.Click += buttonCP_Click;
             // 
             // buttonKP
             // 
@@ -93,6 +96,7 @@
             buttonKP.TabIndex = 5;
             buttonKP.Text = "Kill Process";
             buttonKP.UseVisualStyleBackColor = true;
+            buttonKP.Click += buttonKP_Click;
             // 
             // buttonSW
             // 
@@ -102,6 +106,7 @@
             buttonSW.TabIndex = 6;
             buttonSW.Text = "Start With";
             buttonSW.UseVisualStyleBackColor = true;
+            buttonSW.Click += buttonSW_Click;
             // 
             // buttonRP
             // 
@@ -126,8 +131,9 @@
             Controls.Add(btnVP);
             Controls.Add(textBox2);
             Controls.Add(txtINFO);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
-            Text = "Form1";
+            Text = "Procesos";
             ResumeLayout(false);
             PerformLayout();
         }
