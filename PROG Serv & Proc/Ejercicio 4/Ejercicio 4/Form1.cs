@@ -28,36 +28,37 @@ namespace Ejercicio_4
             processes = Process.GetProcesses();
             Array.ForEach(processes, p =>
             {
-                if (p.ProcessName.Length > 10)
-                {
-                    if (p.MainWindowTitle == String.Empty)
-                    {
-                        txtINFO.AppendText($"PID: {p.Id,5} {"Name:",5} {p.ProcessName.Substring(0, 7)}...\r\n");
-                    }
-                    else if (p.MainWindowTitle.Length > 10)
-                    {
-                        txtINFO.AppendText($"PID: {p.Id,5} {"Name:",5} {p.ProcessName.Substring(0, 7)}... {"Window Name:",15} {p.MainWindowTitle.Substring(0, 7),5}...\r\n");
-                    }
-                    else
-                    {
-                        txtINFO.AppendText($"PID: {p.Id,5} {"Name:",5} {p.ProcessName.Substring(0, 7)}... {"Window Name:",15} {p.MainWindowTitle,5}\r\n");
-                    }
-                }
-                else
-                {
-                    if (p.MainWindowTitle == String.Empty)
-                    {
-                        txtINFO.AppendText($"PID: {p.Id,5} {"Name:",5} {p.ProcessName}\r\n");
-                    }
-                    else if (p.MainWindowTitle.Length > 10)
-                    {
-                        txtINFO.AppendText($"PID: {p.Id,5} {"Name:",5} {p.ProcessName} {"Window Name:",19} {p.MainWindowTitle.Substring(0, 7),5}...\r\n");
-                    }
-                    else
-                    {
-                        txtINFO.AppendText($"PID: {p.Id,5} {"Name:",5} {p.ProcessName} {"Window Name:",19} {p.MainWindowTitle,5}\r\n");
-                    }
-                }
+                //if (p.ProcessName.Length > 10)
+                //{
+                //    if (p.MainWindowTitle == String.Empty)
+                //    {
+                //        txtINFO.AppendText($"PID: {p.Id,5} {"Name:",5} {p.ProcessName.Substring(0, 7)}...\r\n");
+                //    }
+                //    else if (p.MainWindowTitle.Length > 10)
+                //    {
+                //        txtINFO.AppendText($"PID: {p.Id,5} {"Name:",5} {p.ProcessName.Substring(0, 7)}... {"Window Name:",15} {p.MainWindowTitle.Substring(0, 7),5}...\r\n");
+                //    }
+                //    else
+                //    {
+                //        txtINFO.AppendText($"PID: {p.Id,5} {"Name:",5} {p.ProcessName.Substring(0, 7)}... {"Window Name:",15} {p.MainWindowTitle,5}\r\n");
+                //    }
+                //}
+                //else
+                //{
+                //    if (p.MainWindowTitle == String.Empty)
+                //    {
+                //        txtINFO.AppendText($"PID: {p.Id,5} {"Name:",5} {p.ProcessName}\r\n");
+                //    }
+                //    else if (p.MainWindowTitle.Length > 10)
+                //    {
+                //        txtINFO.AppendText($"PID: {p.Id,5} {"Name:",5} {p.ProcessName} {"Window Name:",19} {p.MainWindowTitle.Substring(0, 7),5}...\r\n");
+                //    }
+                //    else
+                //    {
+                //        txtINFO.AppendText($"PID: {p.Id,5} {"Name:",5} {p.ProcessName} {"Window Name:",19} {p.MainWindowTitle,5}\r\n");
+                //    }
+                //}
+                fillTxtBox(p);
             });
         }
 
@@ -65,17 +66,24 @@ namespace Ejercicio_4
         {
             if (compPID())
             {
-                Process p = Process.GetProcessById(pid);
-                txtINFO.AppendText($"PID: {p.Id}\r\nName: {p.ProcessName}\r\nWindow name: {p.MainWindowTitle}\r\n");
-                for (int i = 0; i < p.Threads.Count; i++)
+                try
                 {
-                    try
+                    Process p = Process.GetProcessById(pid);
+                    txtINFO.AppendText($"PID: {p.Id}\r\nName: {p.ProcessName}\r\nWindow name: {p.MainWindowTitle}\r\n");
+                    for (int i = 0; i < p.Threads.Count; i++)
                     {
-                        txtINFO.AppendText($"Subproceso {i}:\r\nID: {p.Threads[i].Id}\r\nStart time: {p.Threads[i].StartTime}\r\n");
+                        try
+                        {
+                            txtINFO.AppendText($"Subproceso {i}:\r\nID: {p.Threads[i].Id}\r\nStart time: {p.Threads[i].StartTime}\r\n");
+                        }
+                        catch (Exception)
+                        {
+                        }
                     }
-                    catch (Exception)
-                    {
-                    }
+                }
+                catch (ArgumentException)
+                {
+                    txtINFO.Text = "NO SE HA ENCONTRADO EL PROCESO";
                 }
             }
         }
@@ -188,6 +196,23 @@ namespace Ejercicio_4
             {
                 textBox2.BackColor = Color.Red;
             }
+        }
+
+        public string formatProces(string s)
+        {
+            if (s.Length > 10)
+            {
+                return s.Substring(0, 7) + "...";
+            }
+            else
+            {
+                return s;
+            }
+        }
+
+        public void fillTxtBox(Process p)
+        {
+            txtINFO.AppendText($"PID: {formatProces(p.Id.ToString()),5} {"Name:",5} {formatProces(p.ProcessName),10} {"Window Name:",15} {formatProces(p.MainWindowTitle),5}\r\n");
         }
     }
 }

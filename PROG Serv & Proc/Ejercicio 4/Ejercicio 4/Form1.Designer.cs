@@ -133,6 +133,7 @@
             Controls.Add(txtINFO);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             Name = "Form1";
             Text = "Procesos";
             ResumeLayout(false);
