@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Hugo\\.nuget\\packages\\": {}
+    "C:\\Users\\alumnoinfo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hugo\\OneDrive\\Documentos\\DAM GitHub\\2-DAM\\PROG Serv & Proc\\2ª EV\\Ejercicio1 Networking\\Ejercicio1 Networking\\Cliente.csproj",
+      "projectUniqueName": "C:\\Users\\alumnoinfo\\Desktop\\BORRAR\\2-DAM-main\\PROG Serv & Proc\\2ª EV\\Ejercicio1 Networking\\Ejercicio1 Networking\\Cliente.csproj",
       "projectName": "Cliente",
-      "projectPath": "C:\\Users\\Hugo\\OneDrive\\Documentos\\DAM GitHub\\2-DAM\\PROG Serv & Proc\\2ª EV\\Ejercicio1 Networking\\Ejercicio1 Networking\\Cliente.csproj",
-      "packagesPath": "C:\\Users\\Hugo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hugo\\OneDrive\\Documentos\\DAM GitHub\\2-DAM\\PROG Serv & Proc\\2ª EV\\Ejercicio1 Networking\\Ejercicio1 Networking\\obj\\",
+      "projectPath": "C:\\Users\\alumnoinfo\\Desktop\\BORRAR\\2-DAM-main\\PROG Serv & Proc\\2ª EV\\Ejercicio1 Networking\\Ejercicio1 Networking\\Cliente.csproj",
+      "packagesPath": "C:\\Users\\alumnoinfo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alumnoinfo\\Desktop\\BORRAR\\2-DAM-main\\PROG Serv & Proc\\2ª EV\\Ejercicio1 Networking\\Ejercicio1 Networking\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Hugo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alumnoinfo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
