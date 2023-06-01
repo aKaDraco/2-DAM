@@ -5,9 +5,10 @@ namespace Servidor
 {
     internal class Server
     {
+        static bool good = true;
+        static Socket sServidor = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         static void Main(string[] args)
         {
-            bool good = true;
             int port = 31416;
             string portPath = Environment.GetEnvironmentVariable("%PROGRAMDATA%") + "config.txt";
             if (File.Exists(portPath))
@@ -22,12 +23,11 @@ namespace Servidor
             }
             IPEndPoint ie = new IPEndPoint(IPAddress.Any, port);
 
-            Socket sServidor = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             try
             {
                 sServidor.Bind(ie);
             }
-            catch (Exception)
+            catch (SocketException e) when (e.ErrorCode == (int)SocketError.AddressAlreadyInUse)
             {
                 good = false;
                 Console.WriteLine("BIND ERROR");
@@ -38,9 +38,16 @@ namespace Servidor
 
             while (good)
             {
-                Socket sCliente = sServidor.Accept();
-                Thread hiloCliente = new Thread(servCliente);
-                hiloCliente.Start(sCliente);
+                try
+                {
+                    Socket sCliente = sServidor.Accept();
+                    Thread hiloCliente = new Thread(servCliente);
+                    hiloCliente.Start(sCliente);
+                }
+                catch (SocketException)
+                {
+                    Console.WriteLine("CONEXION CLOSED");
+                }
             }
         }
 
@@ -56,55 +63,68 @@ namespace Servidor
             using (StreamReader sr = new StreamReader(ns))
             using (StreamWriter sw = new StreamWriter(ns))
             {
+                sw.AutoFlush = true;
                 string welcome = "Welcome to the server";
                 string pass = "";
                 string passTxt = "";
                 sw.WriteLine(welcome);
-                sw.Flush();
 
                 try
                 {
                     mensaje = sr.ReadLine();
-                    sw.Flush();
 
                     if (mensaje != null)
                     {
-                        switch (mensaje)
+                        if (mensaje.StartsWith("close "))
                         {
-                            case "time":
-                                sw.WriteLine("Time ({0})", DateTime.Now.ToString("t"));
-                                break;
-                            case "date":
-                                sw.WriteLine("Date ({0})", DateTime.Now.ToString("d"));
-                                break;
-                            case "all":
-                                sw.WriteLine("Date and time ({0})", DateTime.Now.ToString("g"));
-                                break;
-                            case "close":
-                                using (StreamReader srPass = new StreamReader(Environment.GetEnvironmentVariable("%PROGRAMDATA%") + "\\password.txt"))
+                            pass = mensaje.Substring(6);
+                            try
+                            {
+                                using (StreamReader streamR = new StreamReader(Environment.GetEnvironmentVariable("programdata") + "\\password.txt"))
                                 {
-                                    try
-                                    {
-                                        passTxt = srPass.ReadLine();
-                                    }
-                                    catch (FileNotFoundException)
-                                    {
-                                        sw.WriteLine("ERROR AL ACCEDER AL ARCHIVO DE CONTRASEÑA");
-                                    }
+                                    passTxt = streamR.ReadLine();
                                 }
                                 if (passTxt == pass)
                                 {
-                                    cliente.Close();
-                                }
-                                else if (pass == String.Empty)
-                                {
-                                    sw.WriteLine("Debe introducir una contraseña válida");
+                                    good = false;
+                                    sw.WriteLine("SERVER CLOSED");
+                                    try
+                                    {
+                                        sServidor.Close();
+                                    }
+                                    catch (SocketException)
+                                    {
+                                        Console.WriteLine("SERVER CLOSED");
+                                    }
                                 }
                                 else
                                 {
-                                    sw.WriteLine("Contraseña incorrecta");
+                                    sw.WriteLine("WRONG PASSWORD");
                                 }
-                                break;
+                            }
+                            catch (FileNotFoundException)
+                            {
+                                sw.WriteLine("FILE NOT FOUND");
+                            }
+                            catch (IOException)
+                            {
+                                sw.WriteLine("FILE ERROR");
+                            }
+                        }
+                        else
+                        {
+                            switch (mensaje)
+                            {
+                                case "time":
+                                    sw.WriteLine("Time ({0})", DateTime.Now.ToString("t"));
+                                    break;
+                                case "date":
+                                    sw.WriteLine("Date ({0})", DateTime.Now.ToString("d"));
+                                    break;
+                                case "all":
+                                    sw.WriteLine("Date and time ({0})", DateTime.Now.ToString("g"));
+                                    break;
+                            }
                         }
                     }
                 }
@@ -112,8 +132,8 @@ namespace Servidor
                 {
                     Console.WriteLine("ERROR");
                 }
-                sw.Flush();
                 Console.WriteLine("USER DISCONECTED");
+                cliente.Close();
             }
         }
     }
