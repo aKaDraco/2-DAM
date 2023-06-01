@@ -6,3 +6,11 @@ C:\Users\alumnoinfo\Desktop\BORRAR\Ejercicio12_REPASO\Ejercicio12_REPASO\obj\Deb
 C:\Users\alumnoinfo\Desktop\BORRAR\Ejercicio12_REPASO\Ejercicio12_REPASO\obj\Debug\Ejercicio12_REPASO.csproj.CoreCompileInputs.cache
 C:\Users\alumnoinfo\Desktop\BORRAR\Ejercicio12_REPASO\Ejercicio12_REPASO\obj\Debug\Ejercicio12_REPASO.exe
 C:\Users\alumnoinfo\Desktop\BORRAR\Ejercicio12_REPASO\Ejercicio12_REPASO\obj\Debug\Ejercicio12_REPASO.pdb
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\Ejercicio12_REPASO\Ejercicio12_REPASO\bin\Debug\Ejercicio12_REPASO.exe.config
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\Ejercicio12_REPASO\Ejercicio12_REPASO\bin\Debug\Ejercicio12_REPASO.exe
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\Ejercicio12_REPASO\Ejercicio12_REPASO\bin\Debug\Ejercicio12_REPASO.pdb
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\Ejercicio12_REPASO\Ejercicio12_REPASO\obj\Debug\Ejercicio12_REPASO.csproj.AssemblyReference.cache
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\Ejercicio12_REPASO\Ejercicio12_REPASO\obj\Debug\Ejercicio12_REPASO.csproj.SuggestedBindingRedirects.cache
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\Ejercicio12_REPASO\Ejercicio12_REPASO\obj\Debug\Ejercicio12_REPASO.csproj.CoreCompileInputs.cache
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\Ejercicio12_REPASO\Ejercicio12_REPASO\obj\Debug\Ejercicio12_REPASO.exe
+C:\Users\Hugo\OneDrive\Documentos\DAM GitHub\2-DAM\PROG Serv & Proc\Ejercicio12_REPASO\Ejercicio12_REPASO\obj\Debug\Ejercicio12_REPASO.pdb

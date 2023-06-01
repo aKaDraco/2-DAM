@@ -13,6 +13,8 @@ namespace Ejercicio12_REPASO
     internal class ServidorArchivos
     {
         static string archivoPuerto = Environment.GetEnvironmentVariable("EXAMEN") + "\\puerto.txt";
+        Socket sServer = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+        bool good = true;
         public string leeArchivo(string nombreArchivo, int nLineas)
         {
             int contLineas = 0, lineasTotales;
@@ -90,9 +92,7 @@ namespace Ejercicio12_REPASO
 
         public void iniciaServidor()
         {
-            bool good = true;
             int port = leePuerto();
-            Socket sServer = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             IPEndPoint ieServer = new IPEndPoint(IPAddress.Any, port);
 
             try
@@ -108,7 +108,7 @@ namespace Ejercicio12_REPASO
 
             if (good)
             {
-                Console.WriteLine($"SERVER WAITING AT PORT");
+                Console.WriteLine($"SERVER WAITING AT PORT {ieServer.Port}");
 
                 sServer.Listen(3);
 
@@ -123,7 +123,44 @@ namespace Ejercicio12_REPASO
 
         public void hiloCliente(object socket)
         {
+            string mensaje;
+            Socket cliente = (Socket)socket;
+            IPEndPoint ieCliente = (IPEndPoint)cliente.RemoteEndPoint;
 
+            Console.WriteLine($"CLIENT CONNECTED ON PORT {ieCliente.Port} AND IP {ieCliente.Address}");
+
+            using (NetworkStream ns = new NetworkStream(cliente))
+            using (StreamReader sr = new StreamReader(ns))
+            using (StreamWriter sw = new StreamWriter(ns))
+            {
+                sw.AutoFlush = true;
+                sw.WriteLine("CONNECTED");
+
+                mensaje = sr.ReadLine().ToLower();
+
+                switch (mensaje)
+                {
+                    case "get":
+
+                        break;
+                    case "port":
+
+                        break;
+                    case "list":
+                        sw.WriteLine(listaArchivos());
+                        break;
+                    case "close":
+                        cliente.Close();
+                        break;
+                    case "halt":
+                        good = false;
+                        sServer.Close();
+                        break;
+                    default:
+                        sw.WriteLine("INVALID COMMAND");
+                        break;
+                }
+            }
         }
 
         public int contadorLineas(StreamReader sr)

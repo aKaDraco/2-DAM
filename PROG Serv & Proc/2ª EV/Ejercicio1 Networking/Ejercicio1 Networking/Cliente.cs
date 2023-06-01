@@ -9,7 +9,7 @@ namespace Ejercicio1_Networking
         Socket socket;
         string mensaje = "";
         string ip = "127.0.0.1";
-        int port = 31416;
+        int port = 30147;
 
         public Cliente()
         {

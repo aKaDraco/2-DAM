@@ -15,10 +15,8 @@ namespace Servidor
             {
                 using (StreamReader sr = new StreamReader(portPath))
                 {
-                    if (sr.ReadToEnd() != null)
-                    {
-                        port = Convert.ToInt32(sr.ReadLine());
-                    }
+                    string h = sr.ReadLine();
+                    port = Convert.ToInt32(h);
                 }
             }
             IPEndPoint ie = new IPEndPoint(IPAddress.Any, port);
@@ -68,7 +66,7 @@ namespace Servidor
                 string welcome = "Welcome to the server";
                 string pass = "";
                 string passTxt = "";
-
+                sw.WriteLine(welcome);
                 try
                 {
                     mensaje = sr.ReadLine();

@@ -12,8 +12,7 @@ namespace Ejercicio12_REPASO
         static void Main(string[] args)
         {
             ServidorArchivos s = new ServidorArchivos();
-
-            Console.ReadKey();
+            s.iniciaServidor();
         }
     }
 }
