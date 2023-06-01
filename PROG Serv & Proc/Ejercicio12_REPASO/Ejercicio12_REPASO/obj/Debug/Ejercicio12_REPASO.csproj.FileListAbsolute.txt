@@ -1,0 +1,8 @@
+C:\Users\alumnoinfo\Desktop\BORRAR\Ejercicio12_REPASO\Ejercicio12_REPASO\bin\Debug\Ejercicio12_REPASO.exe.config
+C:\Users\alumnoinfo\Desktop\BORRAR\Ejercicio12_REPASO\Ejercicio12_REPASO\bin\Debug\Ejercicio12_REPASO.exe
+C:\Users\alumnoinfo\Desktop\BORRAR\Ejercicio12_REPASO\Ejercicio12_REPASO\bin\Debug\Ejercicio12_REPASO.pdb
+C:\Users\alumnoinfo\Desktop\BORRAR\Ejercicio12_REPASO\Ejercicio12_REPASO\obj\Debug\Ejercicio12_REPASO.csproj.AssemblyReference.cache
+C:\Users\alumnoinfo\Desktop\BORRAR\Ejercicio12_REPASO\Ejercicio12_REPASO\obj\Debug\Ejercicio12_REPASO.csproj.SuggestedBindingRedirects.cache
+C:\Users\alumnoinfo\Desktop\BORRAR\Ejercicio12_REPASO\Ejercicio12_REPASO\obj\Debug\Ejercicio12_REPASO.csproj.CoreCompileInputs.cache
+C:\Users\alumnoinfo\Desktop\BORRAR\Ejercicio12_REPASO\Ejercicio12_REPASO\obj\Debug\Ejercicio12_REPASO.exe
+C:\Users\alumnoinfo\Desktop\BORRAR\Ejercicio12_REPASO\Ejercicio12_REPASO\obj\Debug\Ejercicio12_REPASO.pdb
