@@ -28,71 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelIP = new System.Windows.Forms.Label();
-            this.textBoxIP = new System.Windows.Forms.TextBox();
-            this.labelPort = new System.Windows.Forms.Label();
-            this.textBoxPort = new System.Windows.Forms.TextBox();
-            this.changeButton = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            labelIP = new Label();
+            textBoxIP = new TextBox();
+            labelPort = new Label();
+            textBoxPort = new TextBox();
+            changeButton = new Button();
+            SuspendLayout();
             // 
             // labelIP
             // 
-            this.labelIP.AutoSize = true;
-            this.labelIP.Location = new System.Drawing.Point(12, 21);
-            this.labelIP.Name = "labelIP";
-            this.labelIP.Size = new System.Drawing.Size(17, 15);
-            this.labelIP.TabIndex = 0;
-            this.labelIP.Text = "IP";
+            labelIP.AutoSize = true;
+            labelIP.Location = new Point(12, 21);
+            labelIP.Name = "labelIP";
+            labelIP.Size = new Size(17, 15);
+            labelIP.TabIndex = 0;
+            labelIP.Text = "IP";
             // 
             // textBoxIP
             // 
-            this.textBoxIP.Location = new System.Drawing.Point(56, 18);
-            this.textBoxIP.Name = "textBoxIP";
-            this.textBoxIP.Size = new System.Drawing.Size(100, 23);
-            this.textBoxIP.TabIndex = 1;
+            textBoxIP.Location = new Point(56, 18);
+            textBoxIP.Name = "textBoxIP";
+            textBoxIP.Size = new Size(100, 23);
+            textBoxIP.TabIndex = 1;
+            textBoxIP.TextChanged += textBoxIP_TextChanged;
             // 
             // labelPort
             // 
-            this.labelPort.AutoSize = true;
-            this.labelPort.Location = new System.Drawing.Point(12, 64);
-            this.labelPort.Name = "labelPort";
-            this.labelPort.Size = new System.Drawing.Size(35, 15);
-            this.labelPort.TabIndex = 2;
-            this.labelPort.Text = "PORT";
+            labelPort.AutoSize = true;
+            labelPort.Location = new Point(12, 64);
+            labelPort.Name = "labelPort";
+            labelPort.Size = new Size(35, 15);
+            labelPort.TabIndex = 2;
+            labelPort.Text = "PORT";
             // 
             // textBoxPort
             // 
-            this.textBoxPort.Location = new System.Drawing.Point(56, 61);
-            this.textBoxPort.Name = "textBoxPort";
-            this.textBoxPort.Size = new System.Drawing.Size(100, 23);
-            this.textBoxPort.TabIndex = 3;
+            textBoxPort.Location = new Point(56, 61);
+            textBoxPort.Name = "textBoxPort";
+            textBoxPort.Size = new Size(100, 23);
+            textBoxPort.TabIndex = 3;
+            textBoxPort.TextChanged += textBoxPort_TextChanged;
             // 
             // changeButton
             // 
-            this.changeButton.Location = new System.Drawing.Point(169, 84);
-            this.changeButton.Name = "changeButton";
-            this.changeButton.Size = new System.Drawing.Size(75, 23);
-            this.changeButton.TabIndex = 4;
-            this.changeButton.Text = "Change";
-            this.changeButton.UseVisualStyleBackColor = true;
-            this.changeButton.Click += new System.EventHandler(this.changeButton_Click);
+            changeButton.Location = new Point(169, 84);
+            changeButton.Name = "changeButton";
+            changeButton.Size = new Size(75, 23);
+            changeButton.TabIndex = 4;
+            changeButton.Text = "Change";
+            changeButton.UseVisualStyleBackColor = true;
+            changeButton.Click += changeButton_Click;
             // 
             // Form2
             // 
-            this.AcceptButton = this.changeButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(256, 119);
-            this.Controls.Add(this.changeButton);
-            this.Controls.Add(this.textBoxPort);
-            this.Controls.Add(this.labelPort);
-            this.Controls.Add(this.textBoxIP);
-            this.Controls.Add(this.labelIP);
-            this.Name = "Form2";
-            this.Text = "CHANGE IP AND PORT";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AcceptButton = changeButton;
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(256, 119);
+            Controls.Add(changeButton);
+            Controls.Add(textBoxPort);
+            Controls.Add(labelPort);
+            Controls.Add(textBoxIP);
+            Controls.Add(labelIP);
+            Name = "Form2";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "CHANGE IP AND PORT";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

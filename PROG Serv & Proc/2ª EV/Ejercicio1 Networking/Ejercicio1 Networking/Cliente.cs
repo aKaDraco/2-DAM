@@ -6,83 +6,78 @@ namespace Ejercicio1_Networking
 {
     public partial class Cliente : Form
     {
-        Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+        Socket socket;
         string mensaje = "";
         string ip = "127.0.0.1";
-        int port = 54768;
-        IPEndPoint iPEndPoint;
+        int port = 31416;
 
         public Cliente()
         {
             InitializeComponent();
         }
 
-        public void conexion(string mensaje, string pass)
+        public void answerProcess(string comand)
         {
-            iPEndPoint = new IPEndPoint(IPAddress.Parse(ip), port);
+            IPEndPoint ie = new IPEndPoint(IPAddress.Parse(ip), port);
+            socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
             try
             {
-                socket.Connect(iPEndPoint);
+                socket.Connect(ie);
+
+                respuesta(comand);
+
+                socket.Close();
             }
-            catch (Exception)
+            catch (SocketException)
             {
-                Console.WriteLine("CONEXION ERROR");
+                labelResultado.Text = "CONECTION ERROR";
             }
-            respuesta();
         }
 
-        public void respuesta()
+        public void respuesta(string comand)
         {
             using (NetworkStream ns = new NetworkStream(socket))
             using (StreamReader sr = new StreamReader(ns))
             using (StreamWriter sw = new StreamWriter(ns))
             {
-                if (mensaje != String.Empty)
-                {
-                    this.Text = sr.ReadLine();
-                    sw.WriteLine(mensaje);
-                    sw.Flush();
-                }
+                sw.AutoFlush = true;
+                sw.WriteLine(comand);
+
                 try
                 {
-                    labelResultado.Text = sr.ReadLine();
+                    labelResultado.Text = "Resultado: " + sr.ReadLine();
                 }
                 catch (IOException)
                 {
-                    sw.WriteLine("COMAND ERROR");
+                    labelResultado.Text = "COMMAND ERROR";
                 }
             }
         }
 
         private void btnsConect(object sender, EventArgs e)
         {
-            string pass = "";
-
-            mensaje = (sender as Button).Text.ToString().ToLower();
-            if (mensaje.Equals("close")) pass = boxPass.Text.ToLower();
-            conexion(mensaje, pass);
+            string auxMensaje = (sender as Button).Text.ToLower();
+            if (auxMensaje.Equals("close"))
+            {
+                mensaje = $"{auxMensaje} {boxPass.Text}";
+            }
+            else
+            {
+                mensaje = auxMensaje;
+            }
+            answerProcess(mensaje);
         }
 
         private void changeIP_Click(object sender, EventArgs e)
         {
-            Form2 f2 = new Form2();
+            Form2 f2 = new Form2(ip, port);
             f2.ShowDialog();
 
             if (f2.DialogResult == DialogResult.OK)
             {
-                try
-                {
-                    ip = f2.textBoxIP.Text.ToString();
-                    port = Int32.Parse(f2.textBoxPort.Text);
-
-                    conexion("", "");
-
-                }
-                catch (Exception)
-                {
-                    MessageBox.Show("ERROR", "VALUE ERROR", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
+                ip = f2.textBoxIP.Text.ToString();
+                port = Int32.Parse(f2.textBoxPort.Text);
             }
         }
 

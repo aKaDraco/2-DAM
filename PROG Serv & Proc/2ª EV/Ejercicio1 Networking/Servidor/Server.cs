@@ -10,7 +10,7 @@ namespace Servidor
         static void Main(string[] args)
         {
             int port = 31416;
-            string portPath = Environment.GetEnvironmentVariable("%PROGRAMDATA%") + "config.txt";
+            string portPath = Environment.GetEnvironmentVariable("PROGRAMDATA") + "\\config.txt";
             if (File.Exists(portPath))
             {
                 using (StreamReader sr = new StreamReader(portPath))
@@ -32,21 +32,22 @@ namespace Servidor
                 good = false;
                 Console.WriteLine("BIND ERROR");
             }
-            sServidor.Listen(1);
-
-            Console.WriteLine("Server waiting at port: {0}", ie.Port);
-
-            while (good)
+            if (good)
             {
-                try
+                Console.WriteLine("Server waiting at port: {0}", ie.Port);
+                sServidor.Listen(1);
+                while (good)
                 {
-                    Socket sCliente = sServidor.Accept();
-                    Thread hiloCliente = new Thread(servCliente);
-                    hiloCliente.Start(sCliente);
-                }
-                catch (SocketException)
-                {
-                    Console.WriteLine("CONEXION CLOSED");
+                    try
+                    {
+                        Socket sCliente = sServidor.Accept();
+                        Thread hiloCliente = new Thread(servCliente);
+                        hiloCliente.Start(sCliente);
+                    }
+                    catch (SocketException)
+                    {
+                        Console.WriteLine("SERVER TURNED OFF");
+                    }
                 }
             }
         }
@@ -67,7 +68,6 @@ namespace Servidor
                 string welcome = "Welcome to the server";
                 string pass = "";
                 string passTxt = "";
-                sw.WriteLine(welcome);
 
                 try
                 {
