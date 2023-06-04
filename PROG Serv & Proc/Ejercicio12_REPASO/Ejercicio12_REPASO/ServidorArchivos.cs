@@ -122,10 +122,16 @@ namespace Ejercicio12_REPASO
 
                 while (good)
                 {
-                    Socket sCliente = sServer.Accept();
-                    Thread t = new Thread(hiloCliente);
-                    t.IsBackground = true;
-                    t.Start(sCliente);
+                    try
+                    {
+                        Socket sCliente = sServer.Accept();
+                        Thread t = new Thread(hiloCliente);
+                        t.IsBackground = true;
+                        t.Start(sCliente);
+                    }
+                    catch (SocketException)
+                    {
+                    }
                 }
             }
         }
@@ -149,10 +155,12 @@ namespace Ejercicio12_REPASO
                 {
                     try
                     {
-                        mensaje = sr.ReadLine().ToLower();
+                        mensaje = sr.ReadLine();
 
                         if (mensaje != null)
                         {
+                            mensaje = mensaje.ToLower();
+
                             if (mensaje == "port ")
                             {
                                 int por = Int32.Parse(mensaje.Substring(5));
