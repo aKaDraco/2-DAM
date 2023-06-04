@@ -62,11 +62,19 @@ namespace Ejercicio12_REPASO
 
         public void guardaPuerto(int numero)
         {
+            string sNum = numero.ToString();
             try
             {
-                using (StreamWriter sw = new StreamWriter(archivoPuerto, true))
+                if (UInt16.TryParse(sNum, out UInt16 num))
                 {
-                    sw.WriteLine(numero);
+                    using (StreamWriter sw = new StreamWriter(archivoPuerto, true))
+                    {
+                        sw.WriteLine(num);
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("INVALID PORT");
                 }
             }
             catch (IOException)
@@ -102,7 +110,7 @@ namespace Ejercicio12_REPASO
             catch (SocketException)
             {
                 good = false;
-                Console.WriteLine("PUERTO EN USO");
+                Console.WriteLine($"PORT {port} ALREADY USED");
                 Environment.Exit(0);
             }
 
@@ -116,6 +124,7 @@ namespace Ejercicio12_REPASO
                 {
                     Socket sCliente = sServer.Accept();
                     Thread t = new Thread(hiloCliente);
+                    t.IsBackground = true;
                     t.Start(sCliente);
                 }
             }
@@ -123,7 +132,6 @@ namespace Ejercicio12_REPASO
 
         public void hiloCliente(object socket)
         {
-            string mensaje;
             Socket cliente = (Socket)socket;
             IPEndPoint ieCliente = (IPEndPoint)cliente.RemoteEndPoint;
 
@@ -133,33 +141,63 @@ namespace Ejercicio12_REPASO
             using (StreamReader sr = new StreamReader(ns))
             using (StreamWriter sw = new StreamWriter(ns))
             {
+                string mensaje = "";
                 sw.AutoFlush = true;
                 sw.WriteLine("CONNECTED");
 
-                mensaje = sr.ReadLine().ToLower();
-
-                switch (mensaje)
+                while (mensaje != null)
                 {
-                    case "get":
+                    try
+                    {
+                        mensaje = sr.ReadLine().ToLower();
 
-                        break;
-                    case "port":
-
-                        break;
-                    case "list":
-                        sw.WriteLine(listaArchivos());
-                        break;
-                    case "close":
-                        cliente.Close();
-                        break;
-                    case "halt":
-                        good = false;
-                        sServer.Close();
-                        break;
-                    default:
-                        sw.WriteLine("INVALID COMMAND");
-                        break;
+                        if (mensaje != null)
+                        {
+                            if (mensaje == "port ")
+                            {
+                                int por = Int32.Parse(mensaje.Substring(5));
+                                guardaPuerto(por);
+                            }
+                            else if (mensaje == "get ")
+                            {
+                                string[] men = mensaje.Substring(4).Split(',');
+                                if (Int32.TryParse(men[1], out Int32 nlineas))
+                                {
+                                    leeArchivo(men[0], nlineas);
+                                }
+                                else
+                                {
+                                    sw.WriteLine("INVALID NUMBER OF LINES");
+                                }
+                            }
+                            else
+                            {
+                                switch (mensaje)
+                                {
+                                    case "list":
+                                        sw.WriteLine(listaArchivos());
+                                        break;
+                                    case "close":
+                                        cliente.Close();
+                                        break;
+                                    case "halt":
+                                        good = false;
+                                        sServer.Close();
+                                        break;
+                                    default:
+                                        sw.WriteLine("INVALID COMMAND");
+                                        break;
+                                }
+                            }
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        mensaje = null;
+                    }
                 }
+                cliente.Close();
+                Console.WriteLine("USER DISCONECTED");
             }
         }
 
